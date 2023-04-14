@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+/*
+font-family: 'Chelsea Market', cursive;
+font-family: 'Poppins', sans-serif;
+
+#F0E5D3 : tan 
+#6D1E15: brown
+#FFE491: yellow
+#334B29: green
+*/
+
+#header-logo{
+    width: 100px;
+}
+
+body{
+    
+    background-color: #F0E5D3;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+
+    overflow-x:hidden;
+}
+
+#container{
+    margin-right: 72px;
+    margin-left: 72px;
+}
+
+#nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header{
+    background-color: #FFE491;
+    border-bottom: solid #6D1E15 3px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+ul{
+    padding:0;
+    margin-left: 48px;
+    display:flex;
+    flex-direction: row;
+    gap: 30px;
+    font-weight: 900;
+    height: 60px;
+    font-size: 20px;
+    align-items:center;
+    float:left;
+}
+li{
+    list-style-type: none;
+    
+}
+li a{
+    color:#334B29;
+}
+
+li a:hover{
+    color:#6D1E15;
+}
+
+#download{
+    height: 35px;
+    width: 150px;
+    background-color: #334B29;
+    float: right;
+    color: #F0E5D3;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:30px;
+    margin-right: 48px;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+#download:hover{
+    background-color:#6D1E15;
+}
+
+#footer{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+}
+
+#footer-background{
+    position:absolute;
+    z-index: -9;
+    width: 100vw;
+}
+
+#footer-content{
+    margin-top: 100px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 20px;
+}
+
+#footer-logo{
+    width: 150px;
+    margin:auto;
+}
+
+#links{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap: 30px;
+}
+#links a{
+    color: white;
+}
+
+#download-footer{
+    height: 60px;
+    width: 400px;
+    background-color: #FFE491;
+    color: black;
+    display:flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items:center;
+    margin:auto;
+    font-family: 'Chelsea Market', cursive;
+    
+    border-radius: 10px;
+    border: 2px black solid;
+}
+a{
+    text-decoration:none;
+}
+
+#copyright{
+    font-size: 12px;
+    color:#ffe4917c;
+    text-align:center;
+}
