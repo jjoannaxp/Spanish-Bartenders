@@ -77,8 +77,9 @@ li a:hover{
     align-items:center;
     margin-top:30px;
     margin-right: 48px;
-    border-radius: 10px;
-    border: 2px black solid;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 3px black solid;
 }
 
 #download:hover{
@@ -135,8 +136,9 @@ li a:hover{
     margin:auto;
     font-family: 'Chelsea Market', cursive;
     
-    border-radius: 10px;
-    border: 2px black solid;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius:50px;
+    border-bottom: 4px black solid;
 }
 a{
     text-decoration:none;
@@ -146,4 +148,8 @@ a{
     font-size: 12px;
     color:#ffe4917c;
     text-align:center;
+}
+
+#hero-logo{
+    width: 300px;
 }
