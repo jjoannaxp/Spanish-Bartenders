@@ -1,0 +1,90 @@
+
+
+#downloadforfree{
+    width: 500px;
+    height: 70px;
+    background-color: #FFE491;
+    color: #6D1E15;
+    display:flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items:center;
+    margin:auto;
+    font-family: 'Chelsea Market', cursive;
+    
+    border-bottom-left-radius: 50px;
+    border-top-right-radius:50px;
+    border-bottom: 4px #6D1E15 solid;
+}
+
+
+#hero-logo{
+    width: 300px;
+}
+
+#hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap: 20px;
+    background-image: url(assets/homeimage.jpeg);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+
+#container{
+    height: 100vh;
+}
+
+
+#header{
+    display: none;
+}
+
+
+#aboutus{
+    position:relative;
+    height:800;
+    top: -120;
+}
+
+#container{
+    height:fit-content;
+}
+
+#missioncontent{
+    position:relative;
+    top: -600;
+}
+
+.title{
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+.description{
+    text-align:center;
+    margin-left: 72px;
+    margin-right: 72px;
+    font-size:28px;
+}
+
+#learnmore{
+    margin-top: 60px;
+    background-color: #334B29;
+    color:#F0E5D3;
+}
+
+#about-learnmore{
+    margin-top: 60px;
+    background-color: #FFE491;
+    color:#334B29;
+    border-color: #334B29;
+}
+
+#aboutsection{
+    margin-bottom: 200px;
+    margin-top: 100px;
+}

@@ -23,9 +23,10 @@ body{
     overflow-x:hidden;
 }
 
-#container{
-    margin-right: 72px;
-    margin-left: 72px;
+#header{
+    position:fixed;
+    width:100%;
+    z-index: 10;
 }
 
 #nav{
@@ -37,7 +38,6 @@ body{
 #header{
     background-color: #FFE491;
     border-bottom: solid #6D1E15 3px;
-    padding-bottom: 10px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
 }
@@ -66,6 +66,12 @@ li a:hover{
     color:#6D1E15;
 }
 
+.title{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 42px;
+    color: #6D1E15;
+}
+
 #download{
     height: 35px;
     width: 150px;
@@ -77,8 +83,7 @@ li a:hover{
     align-items:center;
     margin-top:30px;
     margin-right: 48px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 10px;
     border-bottom: 3px black solid;
 }
 
@@ -87,10 +92,13 @@ li a:hover{
 }
 
 #footer{
-    position:absolute;
+    position:relative;
     left:0;
     bottom:0;
-    width: 100%;
+    width: 100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 #footer-background{
@@ -100,7 +108,6 @@ li a:hover{
 }
 
 #footer-content{
-    margin-top: 100px;
     width:100%;
     display:flex;
     flex-direction: column;
@@ -135,7 +142,6 @@ li a:hover{
     align-items:center;
     margin:auto;
     font-family: 'Chelsea Market', cursive;
-    
     border-bottom-left-radius: 50px;
     border-top-right-radius:50px;
     border-bottom: 4px black solid;
@@ -150,6 +156,23 @@ a{
     text-align:center;
 }
 
-#hero-logo{
-    width: 300px;
+#slogan{
+    color: white;
+}
+
+.button{
+    height: 60px;
+    width: 400px;
+    background-color: #FFE491;
+    color: black;
+    display:flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items:center;
+    margin:auto;
+    font-family: 'Chelsea Market', cursive;
+    
+    border-bottom-left-radius: 50px;
+    border-top-right-radius:50px;
+    border-bottom: 4px black solid;
 }
