@@ -1,0 +1,87 @@
+@import "overall.css";
+
+body{
+    margin: 0px;
+}
+
+#nav{
+    margin: 0px;
+}
+
+.topbar{
+    padding: 30px;
+    background-image: 
+        url(assets/black-fox.png),
+        url(assets/brown-eagle.png),
+        url(assets/brown-fox.png),
+        url(assets/rainbow-eagle.png),
+        url(assets/yellow-fox.png);
+
+    background-position: 
+        0px 130px,
+        300px 130px,
+        600px 130px,
+        900px 130px,
+        1200px 130px;
+
+    background-size: 
+        300px 400px,
+        300px 400px,
+        300px 400px,
+        300px 400px,
+        300px 400px;
+
+     background-repeat: no-repeat;
+     height: 500px;
+     background-color: #6D1E15;
+}
+
+#maintitle{
+    color: #FFE491;
+    margin-top: 500px;
+    text-align: center;
+    background-color: #6D1E15;
+    border-radius: 0 0 1000px 1000px;
+    height: 100px;
+    
+}
+
+
+.play{
+
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.playbox{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.playimg{
+    height: 300px;
+    width: 250px;
+    margin-right: 100px;
+}
+
+.play-background{
+    background-color: #FFE491;
+    border: #6D1E15 solid 3px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    position:relative;
+    margin-right: 72px;
+    padding: 30px;
+    text-align: center;
+}
+
+.goal{
+    height: 200px;
+    padding: 70px 300px;
+    text-align: center;
+}
+
