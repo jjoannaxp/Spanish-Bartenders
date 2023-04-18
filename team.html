@@ -1,0 +1,273 @@
+<html>
+<head>
+<title> Meet the Team </title>
+<style>
+    #header-logo{
+    width: 250px;
+    text-align:center;
+}
+
+#headerdiv{
+    margin-left: 510px;
+    margin-bottom: 15px;
+}
+
+body{
+    
+    background-color: #F0E5D3;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    overflow-x:hidden;
+}
+
+#header{
+    position:fixed;
+    width:100%;
+    z-index: 10;
+}
+
+#nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header{
+    background-color: #FFE491;
+    border-bottom: solid #6D1E15 3px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+ul{
+    padding:0;
+    margin-left: 48px;
+    display:flex;
+    flex-direction: row;
+    gap: 30px;
+    font-weight: 900;
+    height: 60px;
+    font-size: 20px;
+    align-items:center;
+    float:left;
+}
+li{
+    list-style-type: none;
+    
+}
+li a{
+    color:#334B29;
+}
+
+li a:hover{
+    color:#6D1E15;
+}
+
+.title{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 55px;
+    color: #6D1E15;
+    text-align:center;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+#download{
+    height: 35px;
+    width: 150px;
+    background-color: #334B29;
+    float: right;
+    color: #F0E5D3;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:30px;
+    margin-right: 48px;
+    border-radius: 10px;
+    border-bottom: 3px black solid;
+}
+
+#download:hover{
+    background-color:#6D1E15;
+}
+
+#footer{
+    position:relative;
+    left:0;
+    bottom:0;
+    width: 100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#footer-background{
+    position:absolute;
+    z-index: -9;
+    width: 100vw;
+}
+
+#footer-content{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 20px;
+}
+
+#footer-logo{
+    width: 150px;
+    margin:auto;
+}
+
+#links{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap: 30px;
+}
+#links a{
+    color: white;
+}
+
+#download-footer{
+    height: 60px;
+    width: 400px;
+    background-color: #FFE491;
+    color: black;
+    display:flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items:center;
+    margin:auto;
+    font-family: 'Chelsea Market', cursive;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius:50px;
+    border-bottom: 4px black solid;
+}
+a{
+    text-decoration:none;
+}
+
+#copyright{
+    font-size: 12px;
+    color:#ffe4917c;
+    text-align:center;
+}
+
+#slogan{
+    color: white;
+}
+
+.button{
+    height: 60px;
+    width: 400px;
+    background-color: #FFE491;
+    color: black;
+    display:flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items:center;
+    margin:auto;
+    font-family: 'Chelsea Market', cursive;
+    
+    border-bottom-left-radius: 50px;
+    border-top-right-radius:50px;
+    border-bottom: 4px black solid;
+}
+
+#maincontainer{
+    width:1300px;
+    height:1400px;
+    margin:auto;
+    background-color: #334B29;
+    border-radius:20px;
+    margin-top: 20px;
+    padding-top:30px;
+}
+
+.parent1{
+    width:1100px;
+    height:700px;
+    margin:auto;
+    background-color: #FFE491;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:20px;
+}
+
+.parent2{
+    width:1050px;
+    height:650px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:20px;
+    flex-wrap: wrap;
+}
+
+
+.headshot{
+    width:330px;
+    height:300px;
+}
+
+.content1{
+    width:1100px;
+    height:400px;
+    margin:auto;
+    margin-top: 40px;
+    background-color: #6D1E15;
+    border-radius:20px;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+    color:#F0E5D3;
+    font-size: 30px;
+    font-style:bold;
+    font-family: 'Chelsea Market', cursive;
+}
+.body1{
+ font-size:20px;
+}
+
+</style>
+</head>
+<body>
+       
+    <div class="title" id="title"> Meet the Team!</div>
+    <div id="maincontainer"> 
+    <div id="headerdiv">
+     <img src="assets/logo.png" id="header-logo"></div>
+<div class="parent1">
+        <div class="parent2">
+        <img src="headshots/dani.png" class="headshot"> </img>
+        <img src="headshots/joey.png" class="headshot"> </img>
+        <img src="headshots/shailee.jpeg" class="headshot"> </img>
+        <img src="headshots/zac.png" class="headshot"> </img>
+        <img src="headshots/louis.jpeg" class="headshot"> </img>
+        <img src="headshots/yeji.png" class="headshot"> </img>
+</div>
+
+ </div>   
+    
+
+    <div class="content1">
+        <br>
+        The team at The Spanish Bartender is commited to helping people learn spanish in a fun and engaging way!
+        <p class="body1"> Our team is made up of 6 inspiring innovators: Dani, Joey, Shailee, Zac, Louis, and Yeji.</p>
+        <br>
+        <p class="body1"> The mission of our company is to game-ify learning Spanish. We know that learning a new language can be stressful, boring, and difficult, so we are here to make it better! Weither you are a beginner, intermediate, or advanced, The Spanish Bartender is a game that id fun for all ages and skill levels.! </p>
+    </div>
+
+</div>
+</div>
+</body>
+</html>
