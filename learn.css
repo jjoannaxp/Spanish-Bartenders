@@ -31,7 +31,7 @@ padding-top: 10%;
 }
 
 #learn{
-    font-family: 'Chelsea Market', cursive;
+  font-family: 'Poppins', sans-serif;
     display: flex; 
     flex-wrap: wrap;
     justify-content: center;
@@ -64,7 +64,7 @@ padding-top: 10%;
 #features{
     margin-top: -30px;
     margin-bottom: 100px;
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Poppins', sans-serif;
     margin-right: 30px;
 }
 
@@ -93,8 +93,8 @@ padding-top: 10%;
   }
 
   .leveldetail{
-    height: 480px;
-    width: 25%;
+    height: 520px;
+    width: 22%;
     margin-top: 200px;
     margin: auto;
     font-size: 18px;
@@ -106,6 +106,8 @@ padding-top: 10%;
     padding-right: 50px;
     border-bottom-left-radius: 100px;
     border-top-right-radius:100px;
+    font-family: 'Poppins', sans-serif;
+
   }
   
   .levellist {
@@ -140,7 +142,7 @@ padding-top: 10%;
   }
 
   #fluency {
-    font-family: 'Chelsea Market', cursive;
+    font-family: 'Poppins', sans-serif;
   }
 
   #fluency h2{
