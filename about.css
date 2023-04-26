@@ -1,6 +1,8 @@
 #hero{
     height: 85vh;
     background-image: url(assets/Marta_Skins.png);
+
+    background-repeat:no-repeat;
     width:100%;
     background-size: 100%;
     background-position-y: center;
@@ -12,6 +14,7 @@
 #storytitle{
     text-align:center;
     margin-bottom: 20px;
+    padding-top: 110px;
 }
 
 #aboutthegame{
@@ -22,14 +25,18 @@
 }
 
 #storysection{
-    height: 50vh;
-    margin-top: 20vh;
-    margin-left: 72px;
-    margin-right: 72px;
+    height: 500px;
+    margin-top: -100px;
+    background-image: url("assets/aboutus-background.png");
+    background-repeat:no-repeat;
+    background-size: 110% 500px ;
+    background-position: -100px center;
 }
 
 #story{
     font-size: 24px;
+    margin: 50px 150px 0px 150px;
+    
 }
 
 .left-arrow{
@@ -40,6 +47,7 @@
 }
 #characters-title{
     font-size: 72px;
+    padding-top: 100px;
 }
 
 .character-background{

@@ -45,7 +45,7 @@
 
 #aboutus{
     position:relative;
-    height:800;
+    height:700;
     top: -120;
 }
 
@@ -55,7 +55,7 @@
 
 #missioncontent{
     position:relative;
-    top: -600;
+    top: -500;
 }
 
 .title{
@@ -83,7 +83,12 @@
     border-color: #334B29;
 }
 
+#aboutbackground{
+    height: 700px;
+    width: 100%;
+}
+
 #aboutsection{
     margin-bottom: 200px;
-    margin-top: 100px;
+    margin-top: 0px;
 }
