@@ -1,0 +1,22 @@
+.feedback {
+    background-color: #ffcd94;
+    border: 2px solid #ff9f1c;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ff9f1c;
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    width: 200px;
+    top: 0; 
+    right: 0; 
+  }
+  
+  .feedback.show {
+    display: block;
+  }
+  
