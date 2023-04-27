@@ -14,3 +14,15 @@ body{
     height: 600px;
     width: 50%;
 }
+
+.item_description{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 24px;
+    color: #334B29;
+}
+
+.item_description em{
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
