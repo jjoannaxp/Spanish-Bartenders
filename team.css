@@ -9,10 +9,10 @@ body{
 
 .pictures{
     margin-top: -10px;
-    margin-left: 25%;
-    margin-right: 25%;
-    height: 600px;
-    width: 50%;
+    margin-left: 29%;
+    margin-right: 29%;
+    height: 660px;
+    width: 42%;
 }
 
 .item_description{
@@ -25,4 +25,23 @@ body{
     color: #000000;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+}
+
+.photosection{
+    background-image: url("workingphoto/IMG_8209.jpeg"),
+                      url("workingphoto/IMG_8210.jpeg"),
+                      url("workingphoto/IMG_8213.jpeg");
+    
+    background-position: left top,
+                         center top,
+                         right top;
+
+    background-repeat: no-repeat;
+    background-size: 500px 450px,
+                     500px 450px,
+                     500px 450px;
+    height: 500px;  
+    margin-top: -70px;     
+    margin-left: -50px;      
+    margin-right: -50px;    
 }
