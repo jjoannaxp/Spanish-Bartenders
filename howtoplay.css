@@ -41,9 +41,10 @@ body{
     margin-top: 500px;
     text-align: center;
     background-color: #6D1E15;
-    border-radius: 0 0 1000px 1000px;
+    border-radius: 0 0 500px 500px;
     height: 100px;
-    
+    margin-left: -50px;
+    margin-right: -50px;
 }
 
 
@@ -77,6 +78,14 @@ body{
     margin-right: 72px;
     padding: 30px;
     text-align: center;
+    width: 500px;
+    
+}
+
+.play-background strong{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 24px;
+    color: #334B29;
 }
 
 .goal{
@@ -84,4 +93,5 @@ body{
     padding: 70px 300px;
     text-align: center;
 }
+
 

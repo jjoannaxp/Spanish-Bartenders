@@ -3,14 +3,46 @@ body{
 }
 
 .content{
-    padding: 50px;
+    padding: 100px;
     padding-top: 150px;
 }
 
 .pictures{
     margin-top: -10px;
-    margin-left: 25%;
-    margin-right: 25%;
-    height: 600px;
-    width: 50%;
+    margin-left: 29%;
+    margin-right: 29%;
+    height: 660px;
+    width: 42%;
+}
+
+.item_description{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 24px;
+    color: #334B29;
+}
+
+.item_description em{
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.photosection{
+    background-image: url("workingphoto/IMG_8210.jpeg"),
+                      url("workingphoto/IMG_8213.jpeg"),
+                      url("workingphoto/IMG_8209.jpeg")
+                      ;
+    
+    background-position: left top,
+                         center top,
+                         right top;
+
+    background-repeat: no-repeat;
+    background-size: 510px 450px,
+                     510px 450px,
+                     510px 450px;
+    height: 500px;  
+    margin-top: -70px;     
+    margin-left: -100px;      
+    margin-right: -100px;    
 }
