@@ -1,0 +1,16 @@
+body{
+    position: relative;
+}
+
+.content{
+    padding: 50px;
+    padding-top: 150px;
+}
+
+.pictures{
+    margin-top: -10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 600px;
+    width: 50%;
+}
