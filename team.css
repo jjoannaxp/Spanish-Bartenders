@@ -3,7 +3,7 @@ body{
 }
 
 .content{
-    padding: 50px;
+    padding: 100px;
     padding-top: 150px;
 }
 
@@ -28,20 +28,21 @@ body{
 }
 
 .photosection{
-    background-image: url("workingphoto/IMG_8209.jpeg"),
-                      url("workingphoto/IMG_8210.jpeg"),
-                      url("workingphoto/IMG_8213.jpeg");
+    background-image: url("workingphoto/IMG_8210.jpeg"),
+                      url("workingphoto/IMG_8213.jpeg"),
+                      url("workingphoto/IMG_8209.jpeg")
+                      ;
     
     background-position: left top,
                          center top,
                          right top;
 
     background-repeat: no-repeat;
-    background-size: 500px 450px,
-                     500px 450px,
-                     500px 450px;
+    background-size: 510px 450px,
+                     510px 450px,
+                     510px 450px;
     height: 500px;  
     margin-top: -70px;     
-    margin-left: -50px;      
-    margin-right: -50px;    
+    margin-left: -100px;      
+    margin-right: -100px;    
 }
