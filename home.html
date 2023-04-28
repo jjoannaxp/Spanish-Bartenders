@@ -1,8 +1,15 @@
 <html>
   <head>
     <title>Home</title>
-    <link href="overall.css" type="text/css" rel="stylesheet" />
-    <link href="home.css" type="text/css" rel="stylesheet" />
+    <link class="theme" href="overall.css" type="text/css" rel="stylesheet" />
+    <link
+      class="individualtheme"
+      href="home.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="overall.js"></script>
   </head>
   <body>
     <div id="header">
@@ -17,21 +24,32 @@
           <li><a href="Learn.html">Learn</a></li>
           <li><a href="team.html">Team</a></li>
         </ul>
-        <a href="download.html"><div id="Download">Download</div></a>
+        <div id="sidebuttons">
+          <a href="download.html"><div id="Download">Download</div></a>
+          <div id="modes">
+            <div id="modebutton">
+              Light Mode
+              <img src="assets/chevron-black-down.png" id="dropdown-chevron" />
+            </div>
+            <div id="modedrops" class="dropdown-content">
+              <div id="light" class="drops">Light Mode</div>
+              <div id="dark" class="drops">Dark Mode</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="container">
+      <div id="hero-background">
       <div id="hero">
         <img src="assets/logo.png" id="hero-logo" />
         <div id="slogan">One shot of Spanish please!</div>
         <a href="download.html"
-          ><div id="downloadforfree">DOWNLOAD FOR FREE</div></a
+          ><div id="downloadforfree" class="button">DOWNLOAD FOR FREE</div></a
         >
       </div>
+    </div>
       <div id="aboutus">
-        <div >
-          <img src="assets/aboutus-background.png" id="aboutbackground"/>
-        </div>
         <div id="missioncontent">
           <div class="title">Our Mission</div>
           <div id="missionstatement" class="description">
@@ -50,16 +68,26 @@
         <div id="aboutstatement" class="description">
           You quit your job as a business analyst, move to Mexico impulsively
           after finding out that your late grandfather has a bar there in your
-          name. Join Professor Aguila as he helps you run a bar to Spanish locals! 
+          name. Join Professor Aguila as he helps you run a bar to Spanish
+          locals!
         </div>
         <a href="about.html"
-            ><div class="button" id="about-learnmore">Learn More</div></a
-          >
+          ><div class="button" id="about-learnmore">Learn More</div></a
+        >
       </div>
     </div>
 
     <div id="footer">
-      <img src="assets/footer-background.png" id="footer-background" />
+      <div id="footer">
+        <svg width="1512" height="427" viewBox="0 0 1512 427" fill="none" xmlns="http://www.w3.org/2000/svg" id="footer-background">
+          <mask id="mask0_53_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1512" height="427">
+          <rect width="1512" height="427" fill="#D9D9D9"/>
+          </mask>
+          <g mask="url(#mask0_53_3)">
+            <path d="M9.53969 17.2451C524.945 -54.0603 1049.85 150.62 1526.26 17.2451C2002.67 -116.13 1526.26 427 1526.26 427H-11.0795C-11.0795 427 -505.866 88.5505 9.53969 17.2451Z" fill="#6D1E15" id="footerpath"/>
+          </g>
+        </svg>
+        
       <div id="footer-content">
         <img src="assets/logo.png" id="footer-logo" />
         <div id="links">
@@ -69,11 +97,12 @@
         </div>
         <a href="download.html"><div id="download-footer">Download</div></a>
         <div id="copyright">
-          Copyright © Spanish Bartenders. All rights reserved.
+          Copyright © El Tigre Café. All rights reserved.
         </div>
       </div>
     </div>
   </body>
+
   <script>
     window.onscroll = function () {
       scrollFunction();
@@ -84,9 +113,20 @@
         document.body.scrollTop > 500 ||
         document.documentElement.scrollTop > 500
       ) {
-        document.getElementById("header").style.display = "block";
+        if (
+         localStorage.getItem("mode") == "dark"
+        ) {
+          $("#header").css("background-color", "#201B1C");
+          $("#header").css("border-bottom", "solid #FFE491 3px");
+        } else {
+          $("#header").css("background-color", "#FFE491");
+          $("#header").css("border-bottom", "solid #6D1E15 3px");
+          $("li > a").css("color", "#334B29");
+        }
       } else {
-        document.getElementById("header").style.display = "none";
+        $("#header").css("background-color", "rgb(0,0,0,0)");
+        $("#header").css("border-bottom", "rgb(0,0,0,0)");
+        $("li > a").css("color", "#F0E5D3");
       }
     }
   </script>

@@ -8,6 +8,7 @@
   background-size: cover;
   z-index: -1
 }
+
    
 #top {
   height: 500px;
@@ -38,7 +39,6 @@ padding-top: 10%;
     margin-bottom: 100px;
     text-align: center;
     margin-top: -100px;
-    background-color: #F0E5D3;
     background-size: 100%;
 }
 

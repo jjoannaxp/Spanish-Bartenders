@@ -1,5 +1,17 @@
+/*
+font-family: 'Chelsea Market', cursive;
+font-family: 'Poppins', sans-serif;
+
+#F0E5D3 : tan
+#6D1E15: brown
+#FFE491: yellow 
+#334B29: green 
 
 
+#201B1C dark gray
+#212E22 dark green
+
+*/
 
 #hero-logo{
     width: 300px;
@@ -17,7 +29,7 @@
     border-bottom-right-radius: 100% 40%;
   border-bottom-left-radius: 100% 40%;
     height: 95vh;
-    border-bottom: black solid 2px;
+    border-bottom: #F0E5D3 solid 2px;
     background-position:center;
     z-index: 10;
 }
@@ -48,16 +60,16 @@
     flex-direction: column;
     justify-content:center;
     align-items:center;
-   background-color: #FFE491;
+   background-color: #212E22;
    padding-top: 100px;
    padding-bottom: 100px;
    margin-bottom: 100px;
    border-bottom-right-radius: 25%;
-   border-bottom: #6D1E15 3px solid;
+   border-bottom: #F0E5D3 3px solid;
 }
 
 #hero-background{
-    background-color: #FFE491;
+    background-color: #212E22;
 }
 .title{
     text-align:center;
@@ -65,6 +77,7 @@
 }
 
 .description{
+    color:#F0E5D3;
     text-align:center;
     margin-left: 72px;
     margin-right: 72px;
@@ -73,8 +86,8 @@
 
 #learnmore{
     margin-top: 60px;
-    background-color: #334B29;
-    color:#F0E5D3;
+    background-color: #F0E5D3;
+    color:#212E22;
 }
 
 #about-learnmore{

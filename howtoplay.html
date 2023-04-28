@@ -1,7 +1,15 @@
 <html>
   <head>
     <title>Home</title>
-    <link href="howtoplay.css" type="text/css" rel="stylesheet" />
+    <link class="theme" href="overall.css" type="text/css" rel="stylesheet" />
+    <link
+      class="individualtheme"
+      href="howtoplay.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="overall.js"></script>
   </head>
   <body>
     <div id="header">
@@ -16,77 +24,86 @@
           <li><a href="Learn.html">Learn</a></li>
           <li><a href="team.html">Team</a></li>
         </ul>
-        <a href="download.html"><div id="Download">Download</div></a>
+        <div id="sidebuttons">
+          <a href="download.html"><div id="Download">Download</div></a>
+          <div id="modes">
+            <div id="modebutton">
+              Light Mode
+              <img src="assets/chevron-black-down.png" id="dropdown-chevron" />
+            </div>
+            <div id="modedrops" class="dropdown-content">
+              <div id="light" class="drops">Light Mode</div>
+              <div id="dark" class="drops">Dark Mode</div>
+            </div>
+          </div>
+        </div>
       </div>
-      
     </div>
-    <div class = "topbar">
-       <div class = "title" id ="maintitle">How To Play</div> 
+    <div class="topbar">
+      <div class="title" id="maintitle">How To Play</div>
     </div>
 
-    <div class = "play">
-        <div class = "playbox">
-            <img class = "playimg"
-            src = "assets/blue-eagle.png"
-            > <br/><br/>
-            <div class = "play-background">
-            Make conersations with Professor Aguila to get prepared with running the bar!<br><br>
-            By advancing to new levels, you will earn more money to decorate your bar and unlock more drink recipies for your customers! In addition, more success talking to the customers means more money for the bar!
-        </div></div>
-        <div class = "playbox">
-            <div class = "play-background">
-            When you successfully finish a transaction with a customer, you will earn money and more experience points and level up your Spanish skills.<br><br>
-            When you don't know how to respond to a customer's request, you will loose money as they might not purchase your drinks. So, make sure you use Professor Aguila's help when you need a hint!
-            <br/><br/></div>
-            <img class = "playimg"
-            src = "assets/yellow-fox.png"
-            >
-        </div>
-        <div class = "playbox">
-            <img class = "playimg"
-            src = "assets/gamescene.png"
-            > <br/><br/>
-            <div class = "play-background">
-                Use left right up down arrows on your keyboard to move the character in and out of different convesations. <br/><br>
-            You can feel free to join any conversation with the character when they have a box around them, and you must talk to the customers that needs your help, which are marked with an explanation mark.
-                </div>
-            </div>
-    </div>
-    <div class = "goal">
-        Remember, Your goal is to learn Spanish, so no peeking and cheating with google when you forget the words! Nobody gets it right the first time, that's why we are here to learn and play!
-    </div>
-    <div id="footer">
-        <img src="assets/footer-background.png" id="footer-background" />
-        <div id="footer-content">
-          <img src="assets/logo.png" id="footer-logo" />
-          <div id="links">
-            <a href="about.html">About</a>
-            <a href="howtoplay.html">How To Play</a>
-            <a href="team.html">Team</a>
-          </div>
-          <a href="download.html"><div id="download-footer">Download</div></a>
-          <div id="copyright">
-            Copyright © Spanish Bartenders. All rights reserved.
-          </div>
+    <div class="play">
+      <div class="playbox">
+        <img class="playimg" src="assets/blue-eagle.png" /> <br /><br />
+        <div class="play-background">
+          Make conersations with Professor Aguila to get prepared with running
+          the bar!<br /><br />
+          By advancing to new levels, you will earn more money to decorate your
+          bar and unlock more drink recipies for your customers! In addition,
+          more success talking to the customers means more money for the bar!
         </div>
       </div>
-    </body>
-    <script>
-        /*
-        window.onscroll = function () {
-          scrollFunction();
-        };
-    
-        function scrollFunction() {
-          if (
-            document.body.scrollTop > 500 ||
-            document.documentElement.scrollTop > 500
-          ) {
-            document.getElementById("header").style.display = "block";
-          } else {
-            document.getElementById("header").style.display = "none";
-          }
-        }
-        */
-      </script>
+      <div class="playbox">
+        <div class="play-background">
+          When you successfully finish a transaction with a customer, you will
+          earn money and more experience points and level up your Spanish
+          skills.<br /><br />
+          When you don't know how to respond to a customer's request, you will
+          loose money as they might not purchase your drinks. So, make sure you
+          use Professor Aguila's help when you need a hint!
+          <br /><br />
+        </div>
+        <img class="playimg" src="assets/yellow-fox.png" />
+      </div>
+      <div class="playbox">
+        <img class="playimg" src="assets/gamescene.png" /> <br /><br />
+        <div class="play-background">
+          Use left right up down arrows on your keyboard to move the character
+          in and out of different convesations. <br /><br />
+          You can feel free to join any conversation with the character when
+          they have a box around them, and you must talk to the customers that
+          needs your help, which are marked with an explanation mark.
+        </div>
+      </div>
+    </div>
+    <div class="goal">
+      Remember, Your goal is to learn Spanish, so no peeking and cheating with
+      google when you forget the words! Nobody gets it right the first time,
+      that's why we are here to learn and play!
+    </div>
+    <div id="footer">
+      <svg width="1512" height="427" viewBox="0 0 1512 427" fill="none" xmlns="http://www.w3.org/2000/svg" id="footer-background">
+        <mask id="mask0_53_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1512" height="427">
+        <rect width="1512" height="427" fill="#D9D9D9"/>
+        </mask>
+        <g mask="url(#mask0_53_3)">
+          <path d="M9.53969 17.2451C524.945 -54.0603 1049.85 150.62 1526.26 17.2451C2002.67 -116.13 1526.26 427 1526.26 427H-11.0795C-11.0795 427 -505.866 88.5505 9.53969 17.2451Z" fill="#6D1E15" id="footerpath"/>
+        </g>
+      </svg>
+
+      <div id="footer-content">
+        <img src="assets/logo.png" id="footer-logo" />
+        <div id="links">
+          <a href="about.html">About</a>
+          <a href="howtoplay.html">How To Play</a>
+          <a href="team.html">Team</a>
+        </div>
+        <a href="download.html"><div id="download-footer">Download</div></a>
+        <div id="copyright">
+          Copyright © El Tigre Café. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
