@@ -1,29 +1,45 @@
 <html>
-
-<head>
+  <head>
     <title>Learn Spanish</title>
-    <link href="overall.css" type="text/css" rel="stylesheet" />
-    <link href="learn.css" type="text/css" rel="stylesheet" />
-    <script src="quiz.js"></script>
-</head>
+    <link class="theme" href="overall.css" type="text/css" rel="stylesheet" />
+    <link
+      class="individualtheme"
+      href="learn.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="overall.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <div id="header">
-        <div id="nav">
-          <ul id="menu">
-            <a href="home.html">
-              <img src="assets/logo.png" id="header-logo" />
-            </a>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="howtoplay.html">How To Play</a></li>
-            <li><a href="Learn.html">Learn</a></li>
-            <li><a href="team.html">Team</a></li>
-          </ul>
+      <div id="nav">
+        <ul id="menu">
+          <a href="home.html">
+            <img src="assets/logo.png" id="header-logo" />
+          </a>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="howtoplay.html">How To Play</a></li>
+          <li><a href="Learn.html">Learn</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+        <div id="sidebuttons">
           <a href="download.html"><div id="Download">Download</div></a>
+          <div id="modes">
+            <div id="modebutton">
+              Light Mode
+              <img src="assets/chevron-black-down.png" id="dropdown-chevron" />
+            </div>
+            <div id="modedrops" class="dropdown-content">
+              <div id="light" class="drops">Light Mode</div>
+              <div id="dark" class="drops">Dark Mode</div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
 
     <div id="container">
         <div id="top-image"></div>
@@ -42,200 +58,116 @@
                 <h2>Features</h2>
                 <br><br>
                 <ul>
-                    
+                    <li>Manage your own virtual bar</li>
                     <li>Improve your Spanish vocabulary, grammar, and pronunciation skills</li>
                     <li>Real-time feedback on pronunciation and grammar</li>
-                    <li>Manage your own virtual bar</li>
                     <li>Track your progress and compare with other players</li>
                     <li>Earn in-game currency to upgrade your bar and unlock new challenges</li>
                 </ul>
             </div>
 
-            <div id="level">
-                <br><br>
-                <h1>Levels</h1>
-                <br><br><br>
-                 <!--<ul>
+        <div id="level">
+          <br /><br />
+          <h1>Levels</h1>
+          <br /><br /><br />
+          <!--<ul>
 
                     <li><strong>Basic:</strong> Introduction to grammar and vocabulary</li>
                     <li><strong>Intermediate:</strong> Practice with more complex grammar and vocabulary</li>
                     <li><strong>Advanced:</strong> Mastery of grammar, advanced vocabulary, and conversation skills</li>
-                </ul> --> 
-                <div id = "levelgroup">
-                    
-                    <div class="leveldetail">
-                    <h3><br>Basic Level<em> <br/>Introduction to grammar and vocabulary</em></h3> 
-                        <div class="levellist">
-                            - Introduction to basic grammar rules <br/><br/>
-                            - Building vocabulary<br/><br/>
-                            - Practice with simple sentences and basic conversation<br/><br/>
-                        </div>
-                        <strong>Focus:</strong> Conjugation<br/><br/>
-                        
-                    </div>
-                    
-
-                    <div class="leveldetail">
-                        <h3>Intermediate Level <em><br/> More complex grammar and vocabulary</em></h3>
-                        <div class="levellist">
-                        - Review of basic grammar and vocabulary<br/><br/>
-                        - Practice with more complex sentence structures and conversation<br/><br/>
-                        - Introduction to idiomatic expressions and advanced vocabulary<br/><br/>
-                        </div>
-                        <strong>Focus:</strong> Speaking and listening skills<br/><br/>
-                       
-                    </div>
-
-                    <div class="leveldetail">
-                    <h3>Advanced Level <em><br/> Mastery of grammar, vocabulary, and conversation skills</em></h3>
-                        <div class="levellist">
-                        - Mastery of grammar, advanced vocabulary, and conversation skills<br/><br/>
-                        - Reading and writing practice at an advanced level<br/><br/>
-                        - Focus on fluency and expression<br/><br/>
-                        </div>
-                        <strong>Focus:</strong> Cultural awareness and immersion<br/><br/>
-                        
-                    </div>
-                </div>
+                </ul> -->
+          <div id="levelgroup">
+            <div class="leveldetail">
+              <h3>
+                <br />Basic Level<em>
+                  <br />Introduction to grammar and vocabulary</em
+                >
+              </h3>
+              <div class="levellist">
+                - Introduction to basic grammar rules <br /><br />
+                - Building vocabulary<br /><br />
+                - Practice with simple sentences and basic conversation<br /><br />
+              </div>
+              <strong>Focus:</strong> Conjugation<br /><br />
             </div>
 
-            <div id="fluency">
-            <h2>Pour Your Way To Fluency Today!</h2>
-            <p>Join The Spanish Bartender community today and start your journey to Spanish fluency. Our monthly
-                subscription model gives you access to all levels and challenges, and we also offer in-game purchases to
-                enhance your experience. ¡Salud!<br><br>Únase a la comunidad The Spanish Bartender hoy y comience su viaje hacia la fluidez en español. Nuestro
-                modelo de suscripción mensual le brinda acceso a todos los niveles y desafíos, y también ofrecemos
-                compras en el juego para mejorar su experiencia. ¡Salud!</p>
+            <div class="leveldetail">
+              <h3>
+                Intermediate Level
+                <em
+                  ><br />
+                  More complex grammar and vocabulary</em
+                >
+              </h3>
+              <div class="levellist">
+                - Review of basic grammar and vocabulary<br /><br />
+                - Practice with more complex sentence structures and
+                conversation<br /><br />
+                - Introduction to idiomatic expressions and advanced
+                vocabulary<br /><br />
+              </div>
+              <strong>Focus:</strong> Speaking and listening skills<br /><br />
             </div>
-        </ul>
+
+            <div class="leveldetail">
+              <h3>
+                Advanced Level
+                <em
+                  ><br />
+                  Mastery of grammar, vocabulary, and conversation skills</em
+                >
+              </h3>
+              <div class="levellist">
+                - Mastery of grammar, advanced vocabulary, and conversation
+                skills<br /><br />
+                - Reading and writing practice at an advanced level<br /><br />
+                - Focus on fluency and expression<br /><br />
+              </div>
+              <strong>Focus:</strong> Cultural awareness and immersion<br /><br />
+            </div>
+          </div>
         </div>
 
+        <div id="fluency">
+          <h2>Pour Your Way To Fluency Today!</h2>
+          <p>
+            Join The Spanish Bartender community today and start your journey to
+            Spanish fluency. Our monthly subscription model gives you access to
+            all levels and challenges, and we also offer in-game purchases to
+            enhance your experience. ¡Salud!<br /><br />Únase a la comunidad The
+            Spanish Bartender hoy y comience su viaje hacia la fluidez en
+            español. Nuestro modelo de suscripción mensual le brinda acceso a
+            todos los niveles y desafíos, y también ofrecemos compras en el
+            juego para mejorar su experiencia. ¡Salud!
+          </p>
+        </div>
+      </div>
+
+      <div id="footer">
         <div id="footer">
-            <img src="assets/footer-background.png" id="footer-background" />
-            <div id="footer-content">
-
-                <img src="assets/logo.png" id="footer-logo" />
-                <div id="links">
-                    <a href="about.html">About</a>
-                    <a href="howtoplay.html">How To Play</a>
-                    <a href="team.html">Team</a>
-                </div>
-                <a href="download.html">
-                    <div id="download-footer">Download</div>
-                </a>
-                <div id="copyright">
-                    Copyright © El Tigre Café. All rights reserved.
-                </div>
-            </div>
-            <div id="popup">
-                <div id="popup-content">
-                  <p>Test Your Skills!</p>
-                  <button id="popup-message">Let's Go!</button>
-                </div>
-                </div>
-              <div id="largeDiv">
-                <html>
-    <head>
-        <title>Quiz</title>
-        <link href="overall.css" type="text/css" rel="stylesheet" />
-        <link href="quiz.css" type="text/css" rel="stylesheet" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="quiz.js"></script>
-    </head>
-    <body>
-<div id="quiz-container">
-    Try a few Spanish Practice Questions
-<form id="quiz-form">
-    <h1>Beginner Level</h1>
-    <p>What is "coffee" in Spanish?</p>
-    <div id="q1">
-    <input type="radio" name="q1" value="a"> Leche<br>
-    <input type="radio" name="q1" value="b"> Café<br>
-    <input type="radio" name="q1" value="c"> Té<br>
-    <div class="feedback" data-answer="b">Correct!</div>
-    <div class="feedback" data-answer="a,c">Incorrect.</div>
-    </div>
-
-    <div id="q2">
-    <p>What is "breakfast" in Spanish?</p>
-    <input type="radio" name="q2" value="a"> Almuerzo<br>
-    <input type="radio" name="q2" value="b"> Cena<br>
-    <input type="radio" name="q2" value="c"> Desayuno<br>
-    <div class="feedback" data-answer="c">Correct!</div>
-    <div class="feedback" data-answer="a,b">Incorrect.</div>
-</div>
-
-    <div id="q3">
-    <p>What is the Spanish verb for "to drink"?</p>
-    <input type="radio" name="q3" value="a"> Comer<br>
-    <input type="radio" name="q3" value="b"> Beber<br>
-    <input type="radio" name="q3" value="c"> Bailar<br>
-    <div class="feedback" data-answer="b">Correct!</div>
-    <div class="feedback" data-answer="a,c">Incorrect.</div>
-</div>
-
-<div id="q4">
-    <h1>Intermediate Level</h1>
-    <p>Which of the following represents "small, medium, and large" in Spanish?</p>
-    <input type="radio" name="q4" value="a"> Pequeño, mediano, grande<br>
-    <input type="radio" name="q4" value="b"> Corto, mediano, largo<br>
-    <input type="radio" name="q4" value="c"> Fino, mediano, grande<br>
-    <div class="feedback" data-answer="a">Correct!</div>
-    <div class="feedback" data-answer="b,c">Incorrect.</div>
-</div>
-
-<div id="q5">
-    <p>How do you conjugate "to drink" in the first person singular (I) in Spanish?</p>
-    <input type="radio" name="q5" value="a"> Bebes<br>
-    <input type="radio" name="q5" value="b"> Beben<br>
-    <input type="radio" name="q5" value="c"> Bebo<br>
-    <div class="feedback" data-answer="c">Correct!</div>
-    <div class="feedback" data-answer="b,a">Incorrect.</div>
-</div>
-
-<div id="q6">
-    <p>How do you say "I want to order a cup of coffee" in Spanish?</p>
-    <input type="radio" name="q6" value="a"> Quiero comprar una taza de café<br>
-    <input type="radio" name="q6" value="b"> Quiero beber una taza de té<br>
-    <input type="radio" name="q6" value="c"> Quiero pedir una taza de café<br>
-    <div class="feedback" data-answer="c">Correct!</div>
-    <div class="feedback" data-answer="b,a">Incorrect.</div>
-</div>
-
-<div id="q7">
-    <h1>Advanced Level</h1>
-    <p>How do you say "Your total price was 12.65" in Spanish?</p>
-    <input type="radio" name="q7" value="a"> Su precio total fue doce con sesenta y cinco<br>
-    <input type="radio" name="q7" value="b"> Su precio total fue doce con setenta y cinco<br>
-    <input type="radio" name="q7" value="c"> Su precio total fue dos con sesenta y cinco<br>
-    <div class="feedback" data-answer="a">Correct!</div>
-    <div class="feedback" data-answer="b,c">Incorrect.</div>
-</div>
-
-<div id="q8">
-    <p>¿Cuál de las siguientes opciones es una buena alternativa de leche sin lácteos?</p>
-    <input type="radio" name="q8" value="a"> Cappuccino<br>
-    <input type="radio" name="q8" value="b"> leche de almendra<br>
-    <input type="radio" name="q8" value="c"> mantequilla<br>
-    <div class="feedback" data-answer="b">Correct!</div>
-    <div class="feedback" data-answer="a,c">Incorrect.</div>
-</div>
-
-<div id="q9"></div>
-    <p>Which phrase is conjugated correctly in Spanish?</p>
-    <input type="radio" name="q9" value="a"> Yo prepararé un café para el cliente.<br>
-    <input type="radio" name="q9" value="b"> Nosotros prepararán dos capuchinos para la mesa tres.<br>
-    <input type="radio" name="q9" value="c"> Él prepara un latte cada mañana antes de trabajar.<br>
-    <div class="feedback" data-answer="c">Correct!</div>
-    <div class="feedback" data-answer="b,a">Incorrect.</div>
-</div>
-
-
-              </div>
-            </div>
-            
-
-
+          <svg width="1512" height="427" viewBox="0 0 1512 427" fill="none" xmlns="http://www.w3.org/2000/svg" id="footer-background">
+            <mask id="mask0_53_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1512" height="427">
+            <rect width="1512" height="427" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_53_3)">
+              <path d="M9.53969 17.2451C524.945 -54.0603 1049.85 150.62 1526.26 17.2451C2002.67 -116.13 1526.26 427 1526.26 427H-11.0795C-11.0795 427 -505.866 88.5505 9.53969 17.2451Z" fill="#6D1E15" id="footerpath"/>
+            </g>
+          </svg>
+        <div id="footer-content">
+          <img src="assets/logo.png" id="footer-logo" />
+          <div id="links">
+            <a href="about.html">About</a>
+            <a href="howtoplay.html">How To Play</a>
+            <a href="team.html">Team</a>
+          </div>
+          <a href="download.html"><div id="download-footer">Download</div></a>
+          <div id="copyright">
+            Copyright © El Tigre Café. All rights reserved.
+  
+          </div>
+        </div>
+      </div>
+      
 </body>
 
 </html>

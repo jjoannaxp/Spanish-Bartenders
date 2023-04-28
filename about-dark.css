@@ -1,3 +1,18 @@
+/*
+font-family: 'Chelsea Market', cursive;
+font-family: 'Poppins', sans-serif;
+
+#F0E5D3 : tan
+#6D1E15: brown
+#FFE491: yellow 
+#334B29: green 
+
+
+#201B1C dark gray
+#212E22 dark green
+
+*/
+
 #hero{
     height: 85vh;
     background-image: url(assets/Marta_Skins.png);
@@ -12,10 +27,11 @@
     align-items:center;
     border-bottom-right-radius: 100% 40%;
     border-bottom-left-radius: 100% 40%;
+    border-bottom:#F0E5D3 solid 2px;
 }
 
 #hero-background{
-    background-color:#FFE491;
+    background-color:#212E22;
 }
 #storytitle{
     text-align:center;
@@ -32,10 +48,10 @@
 
 #storysection{
     height: 500px;
-    background-color: #FFE491;
-
+    background-color: #212E22;
+    color:white;
    border-bottom-right-radius: 25%;
-   border-bottom: #6D1E15 3px solid;
+   border-bottom: #F0E5D3 3px solid;
 }
 
 #story{
@@ -81,6 +97,7 @@
 }
 
 .character{
+    color:#F0E5D3;
     width: 100vw;
     display:flex;
     flex-direction:row;
