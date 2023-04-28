@@ -1,0 +1,20 @@
+
+body{
+    position: relative;
+    
+}
+
+.content{
+    color:#F0E5D3;
+    padding: 50px;
+    padding-top: 150px;
+}
+
+.pictures{
+    color:#F0E5D3;
+    margin-top: -10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 600px;
+    width: 50%;
+}
