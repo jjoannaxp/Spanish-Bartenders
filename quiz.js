@@ -28,6 +28,8 @@ $(document).ready(function() {
             questionContainer.find('.feedback[data-answer="a"]').fadeOut();
             questionContainer.find('.feedback[data-answer="b,c"]').fadeIn();
         }
-    
-    });
+      $('#button-id').click(function() {
+    $('#div-id').css('display', 'block');
+  });
 });
+    });  

@@ -204,7 +204,22 @@ padding-top: 10%;
   color: white;
 }
 
-  
+#largeDiv {
+  position: fixed;
+  top: 44%;
+  right: 1%;
+  height: 55%;
+  width: 20%;
+  margin-top: -16%;
+  background-color:#F0E5D3; 
+  z-index: 9999;
+  border-radius: 100px;
+  padding: 40px;
+  border: 10px solid #334B29;
+  opacity: 90%;
+}
+
+
 
   /*
   #level h3:first-of-type {
