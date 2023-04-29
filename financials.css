@@ -1,0 +1,28 @@
+#header{
+    margin-top: -200px;
+}
+
+#title{
+    margin-top: 200px;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 40px;
+    color: #6D1E15;
+    text-align:center;
+}
+
+#chart-container{
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+#timeframe-slider{
+    margin-bottom: 100px;
+    width: 40%;
+    margin-top: 20px;
+}
+
+.revenue{
+    background-color: #6D1E15;
+}
