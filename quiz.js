@@ -1,48 +1,38 @@
 $(document).ready(function() {
-    $('.feedback').hide();
-    $('input[type=radio]').change(function() {
-        var questionContainer = $(this).closest('div');
-        var selected = questionContainer.find('input[type=radio]:checked').val();
-        if(selected == 'b') {
-            questionContainer.find('.feedback[data-answer="b"]').fadeIn();
-            questionContainer.find('.feedback[data-answer="a,c"]').fadeOut();
-        } else {
-            questionContainer.find('.feedback[data-answer="b"]').fadeOut();
-            questionContainer.find('.feedback[data-answer="a,c"]').fadeIn();
+    $(".feedback").hide();
+  
+    $("#button1").click(function(event) {
+      event.preventDefault();
+      var numCorrect = 0;
+      var totalQuestions = 0;
+  
+      $("#quiz-form div[id^='q']").each(function() {
+        var question = $(this);
+        var answer = question.find("input[type='radio']:checked").val();
+        var correct = question.find(".feedback[data-answer='" + answer + "']");
+  
+  
+        if (correct.length > 0) {
+          numCorrect++;
         }
-        var questionContainer = $(this).closest('div');
-        var selected = questionContainer.find('input[type=radio]:checked').val();
-        if(selected == 'c') {
-            questionContainer.find('.feedback[data-answer="c"]').fadeIn();
-            questionContainer.find('.feedback[data-answer="a,b"]').fadeOut();
-        } else {
-            questionContainer.find('.feedback[data-answer="c"]').fadeOut();
-            questionContainer.find('.feedback[data-answer="a,b"]').fadeIn();
-        }
-        var questionContainer = $(this).closest('div');
-        var selected = questionContainer.find('input[type=radio]:checked').val();
-        if(selected == 'a') {
-            questionContainer.find('.feedback[data-answer="a"]').fadeIn();
-            questionContainer.find('.feedback[data-answer="b,c"]').fadeOut();
-        } else {
-            questionContainer.find('.feedback[data-answer="a"]').fadeOut();
-            questionContainer.find('.feedback[data-answer="b,c"]').fadeIn();
-        }
-        $('#popup-message').click(function() {
-            console.log("clicked");
-            $('#largeDiv').css('display', 'block');
-          
-            $("#popup-message").on("click", function () {
-              $("#largeDiv").addClass("show");
-            });
-          
-            $("#close").on("click", function () {
-              $("#largeDiv").removeClass("show");
-
-        
-            });
-          });
-        
+  
+        totalQuestions++;
+      });
+  
+      var score = numCorrect / totalQuestions * 100;
+      var message = "You got " + numCorrect + " out of " + totalQuestions + " correct. Score: " + score.toFixed(2);
+  
+      var highestScore = localStorage.getItem('highestScore');
+  
+      if (highestScore == null || score > highestScore) {
+        highestScore = score;
+        localStorage.setItem('highestScore', highestScore);
+        message += " (New high score!)";
+      } else {
+        message += " (High score: " + highestScore.toFixed(2) + ")";
+      }
+  
+      alert(message);
     });
-    
   });
+  
