@@ -6,14 +6,19 @@ var chartData = {
     {
       label: "Revenue",
       data: [108000, 129600, 168480],
+      backgroundColor: "#6D1E15",
     },
     {
       label: "Gross Profit",
+      class: "grossprofit",
       data: [75500, 90720, 117836],
+      backgroundColor: "#FFE491",
     },
     {
       label: "Operating Profit",
+      class: "operatingprofit",
       data: [61925.26, 74430.32, 96759.41],
+      backgroundColor: "#334B29",
     },
   ],
 };
