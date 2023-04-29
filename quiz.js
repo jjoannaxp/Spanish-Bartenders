@@ -28,8 +28,21 @@ $(document).ready(function() {
             questionContainer.find('.feedback[data-answer="a"]').fadeOut();
             questionContainer.find('.feedback[data-answer="b,c"]').fadeIn();
         }
-      $('#button-id').click(function() {
-    $('#div-id').css('display', 'block');
+        $('#popup-message').click(function() {
+            console.log("clicked");
+            $('#largeDiv').css('display', 'block');
+          
+            $("#popup-message").on("click", function () {
+              $("#largeDiv").addClass("show");
+            });
+          
+            $("#close").on("click", function () {
+              $("#largeDiv").removeClass("show");
+
+        
+            });
+          });
+        
+    });
+    
   });
-});
-    });  
