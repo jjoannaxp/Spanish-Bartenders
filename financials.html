@@ -1,13 +1,24 @@
 <html>
-    <head>
-        <title>Financial Chart</title>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <head>
+    <title>Financial Chart</title>
 
-    </head>
-    <body>
-        <div id="chart-container">
-            <canvas id="myChart"></canvas>
+    <style>
+      #chart-container {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+    <div>
+      <label for="timeframe-slider">Timeframe:</label>
+      <input type="range" id="timeframe-slider" min="1" max="5" value="3" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-        </div>
-    </body>
+    <script src="financials.js"></script>
+  </body>
 </html>
