@@ -87,6 +87,13 @@ li a:hover{
     border-bottom: 3px black solid;
 }
 
+.arrow{
+    position:absolute;
+    height: 200px;
+    margin-left: 10%;
+    
+}
+
 #sidebuttons{
     height: 100px;
     display:flex;
@@ -252,3 +259,4 @@ a{
 #modes:hover .dropdown-content {
   display: block;
 }
+
