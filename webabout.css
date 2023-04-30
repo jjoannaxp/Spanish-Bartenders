@@ -1,0 +1,103 @@
+#my-slider{
+    width: fit-content;
+    margin:auto;
+    padding-top: 200px;
+    display:flex;
+    align-items:center;
+    margin-bottom: 200px;
+   
+}
+#header{
+    margin-bottom: 20px;
+}
+#my-slider div img{
+    width: 100%;
+
+}
+#my-slider div{
+    width: 600px;
+    height: 600px;
+}
+
+
+.slick-dots {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.5;
+  }
+  
+  .slick-dots li.slick-active {
+    opacity: 1;
+  }
+.slick-dots li button{
+    display:none;
+}  
+
+.slick-prev:before,
+.slick-next:before {
+  color: #6D1E15; 
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: #212E22; 
+}
+
+.slick-prev:before {
+  content: "\2039"; 
+}
+
+.slick-next:before {
+  content: "\203A"; 
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  outline: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+  }
+  
+  figcaption {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap:0;
+  }
+  
+  .name-caption {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .role {
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  .tasks {
+    font-size: 14px;
+  }
+  
