@@ -39,7 +39,7 @@ p {
 
 #image-container {
     position: absolute;
-    left: -50%;
+    left: -55%;
     top: 25%;
   }
 
@@ -240,4 +240,35 @@ p {
 
 .market-niche {
     margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  #divider {
+    left: 25%;
+  }
+
+  #image-container{
+    position: absolute;
+    left: -70%;
+    top: 25%;
+  }
+
+  #image-container2 img{
+    visibility: hidden;
+  }
+
+  #mission{
+    margin-left: -30px;
+
+  }
+  #mission #title{
+    margin-left: 200px;
+  }
+
+  .container {
+    border-radius: 0;
+  }
+
+
 }
