@@ -30,10 +30,16 @@
 
 .circle{
     position: absolute;
-    opacity: 0;
+    opacity: 1;
 }
 
 #learncircle{
     width: 300px;
     top: 0px;
+}
+
+#arrowteam{
+    position: fixed;
+    top: 110px;
+    left: 600px;
 }
