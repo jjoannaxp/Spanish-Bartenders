@@ -1,4 +1,3 @@
-
 function loadJimbo(containerId, fbxName, animationIndex, sliderId, initialPose, scale, pos) {
   const container = document.getElementById(containerId);
   let currentObject;
@@ -87,6 +86,14 @@ function loadJimbo(containerId, fbxName, animationIndex, sliderId, initialPose, 
     animateBilly();
   });
 
+//   listen for page size change and adjust to fit the container with jquery
+    $(window).resize(function () {
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        // render
+        renderer.render(scene, camera);
+    });
   parentDiv.addEventListener("mouseout", function () { // pause animation when mouse is not over the container
     animationRunning = false;
     if (currentAction) {
