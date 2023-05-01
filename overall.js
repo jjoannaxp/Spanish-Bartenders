@@ -38,7 +38,7 @@ $(document).ready(function () {
     console.log(currentMode);
   }
 
-  $("li >a").hover(function(){
+  $("li > a").hover(function(){
     let green = "rgb(51, 75, 41)";
     let redbrown = "rgb(109, 30, 21)";
     if($(this).css("color") == green){
