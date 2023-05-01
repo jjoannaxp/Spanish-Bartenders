@@ -102,7 +102,7 @@ body{
     color: #F0E5D3;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .play-background{
         margin: 0px;
     }

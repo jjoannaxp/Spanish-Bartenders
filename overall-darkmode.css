@@ -285,6 +285,9 @@ a{
     .button{
         width: 300px;
     }
+    #footer-background{
+        width: 200%;
+    }
 
     /* adaptive phone*/
     @media screen and (max-width: 768px) {
