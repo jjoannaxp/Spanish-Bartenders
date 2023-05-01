@@ -3,13 +3,11 @@
     <title>Home</title>
     <link class="theme" href="overall.css" type="text/css" rel="stylesheet" />
    
-    <link class="individualtheme" href="home.css" type="text/css" rel="stylesheet"
-    />
+    <link class="individualtheme" href="home.css" type="text/css" rel="stylesheet"/>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="overall.js"></script>
-    <script src = "home.js"></script>
 
-    <link href="presentation.css" type="text/css" rerl="stylesheet">
+    <link href="presentation.css" type="text/css" rel="stylesheet">
     <script src="presentation.js"></script>
   </head>
   <body>
@@ -47,29 +45,31 @@
       <div id="hero-background">
         
       <div id="hero">
-        <div class="arrow" id="arrow1">
-          <img src="uparrow.png">
+        
+        <div  id="arrow1"class="arrowdiv">
+          <img src="uparrow.png" class="tutorial-arrow">
         </div>
     
-        <div id="arrow2" class="arrow">
-            <img src="uparrow.png">
+        <div id="arrow2" class="arrowdiv">
+            <img src="uparrow.png" class="tutorial-arrow">
         </div>
     
-        <div id="arrow3" class="arrow">
-            <img src="uparrow.png">
+        <div id="arrow3" class="arrowdiv">
+            <img src="uparrow.png" class="tutorial-arrow">
         </div>
     
-        <div id="arrow4" class="arrow">
-            <img src="uparrow.png">
+        <div id="arrow4" class="arrowdiv" >
+            <img src="uparrow.png" class="tutorial-arrow">
         </div>
     
-        <div id="arrow5" class="arrow">
-            <img src="uparrow.png">
+        <div id="arrow5" class="arrowdiv">
+            <img src="uparrow.png" class="tutorial-arrow">
         </div> 
     
-        <div>
+       
             <img src="circlegif.gif" id="circle">
-        </div>
+    
+        <div id="tutorialbutton" class="button">Start Tutorial</div>
         
         <img src="assets/please.gif" style="width: 300px">
         <div id="slogan">One shot of Spanish please!</div>
@@ -105,6 +105,9 @@
         >
       </div>
     </div>
+    <audio id="audio-1" class="audio">
+      <source src="audios/audio1.mp3" type="audio/mp3">
+    </audio>
 
     <div id="footer">
       <div id="footer">
@@ -130,6 +133,8 @@
         </div>
       </div>
     </div>
+
+    
   </body>
 
   <script>
