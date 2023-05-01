@@ -1,3 +1,6 @@
+#body{
+    overflow: none;
+}
 #header{
     margin-top: -200px;
 }
@@ -180,7 +183,7 @@
   }
 
 
-  
+
   #smalltext {
     margin: 100px;
     padding-bottom: 50px;
