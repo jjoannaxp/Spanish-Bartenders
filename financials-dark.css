@@ -1,0 +1,251 @@
+#body{
+  overflow: none;
+  background-color: #201B1C;
+  color: #F0E5D3;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #F0E5D3;
+}
+#header{
+  margin-top: -200px;
+}
+
+#title{
+  margin-top: 200px;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 40px;
+  color: #FFE491;
+}
+#title2{
+  font-family: 'Chelsea Market', cursive;
+  font-size: 40px;
+  color: #FFE491;
+}
+
+#chart-container{
+  margin-top: 10px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+#timeframe-slider{
+  margin-bottom: 100px;
+  width: 40%;
+  margin-top: 20px;
+}
+
+label
+{
+  color: lightgray;
+}
+.revenue{
+  background-color: #6D1E15;
+}
+
+#image-container {
+  position: absolute;
+  left: -50%;
+  top: 25%;
+}
+
+#image-container img {
+  height: 50%;
+  width: 8%;
+  object-fit: contain;
+}
+
+#image-container2 {
+  position: absolute;
+  left:55%;
+  top: 65%;
+  animation: rotate 2s linear forwards;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+#image-container2 img {
+  width: 50%;
+}
+
+#divider {
+  height: 65vh;
+  width: 5px;
+  background-color:#FFE491;
+  position: absolute;
+  left: calc(26% - 1px); 
+  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-top: -10px;
+}
+
+#title-content h1 {
+  font-size: 2em;
+  margin-left: 30%;
+  text-align: left;
+  font-family: 'Chelsea Market', cursive;
+  color: #FFE491;
+}
+
+#title-content h2 {
+  font-size: 6em;
+  font-family: 'Chelsea Market', cursive;
+  color: #FFE491;
+  margin-left: 30%;
+  margin-top: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+#toc {
+  position: absolute;
+  top: 25%;
+  right: 20%;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: right;
+}
+
+#toc ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Chelsea Market', cursive;
+      color: #FFE491;
+
+    }
+
+#toc li {
+  margin-bottom: 5px;
+  
+}
+
+
+#toc a {
+  text-decoration: none;
+  color: #FFE491;
+}
+
+#toc a:hover {
+  background-color: white;
+}
+
+#mission {
+  padding-top: 30px;
+  margin-left: 20%;
+  margin-right: -20%;
+  background-color: #6D1E15;
+  border-radius: 200px;
+
+}
+#mission p {
+  color:#F0E5D3;
+  margin-top: 5px;
+  margin-right: 600px;
+  
+
+}
+#ask {
+  padding-top: 30px;
+  margin-right: 15%;
+  margin-left: 15%;
+  background-color: #6D1E15;
+  border-radius: 200px;
+  margin-bottom: 10%;
+  padding-bottom: 50px;
+
+}
+#ask p {
+  color:#F0E5D3;
+  margin-top: 5px;
+  padding: 30px;
+  
+
+}
+
+
+#ask ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#ask ul li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#ask ul li strong {
+  font-weight: bold;
+}
+
+#ask ul li em {
+  font-style: italic;
+}
+
+
+
+#smalltext {
+  margin: 100px;
+  padding-bottom: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #F0E5D3;
+  line-height: 1.5;
+  border: 3px solid #6D1E15;
+  padding: 20px;
+  border-radius: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #2d2b2b;
+}
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFE491;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFE491;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.industry {
+  margin-bottom: 40px;
+}
+
+.competitors {
+  margin-bottom: 40px;
+  
+}
+
+.addressable-market {
+  margin-bottom: 40px;
+}
+
+.market-niche {
+  margin-bottom: 40px;
+}
