@@ -17,6 +17,10 @@ body{
 
 }
 
+
+.item img{
+    border-radius:50%;
+}
 #title{
     margin-top: 80px;
 }
