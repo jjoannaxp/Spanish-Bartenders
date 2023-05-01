@@ -11,7 +11,7 @@
     <link href="home-presentation.css" type="text/css" rel="stylesheet">
     <script src="presentation.js"></script>
   </head>
-  <body>
+  <body id = "all">
     <div id="header">
       <div id="nav">
         <ul id="menu">
@@ -19,7 +19,7 @@
             <img src="assets/logo.png" id="header-logo" />
           </a>
           <li><a href="Presentation.html">Home</a></li>
-          <li><a href="about-presentation.html" id="about-page">About</a></li>
+          <li><a href="#" id="about-page">About</a></li>
           <li><a href="howtoplay-presentation.html">How To Play</a></li>
           <li><a href="learn-presentation.html">Learn</a></li>
           <li><a href="team-presentation.html">Team</a></li>
@@ -153,6 +153,11 @@
     window.onscroll = function () {
       scrollFunction();
     };
+    // if about page clicked, load about page html without refreshing with ajax
+    $("#about-page").click(function () {
+      console.log("about clicked");
+      $("#all").load("about-presentation.html");
+    });
 
     function scrollFunction() {
       if (
