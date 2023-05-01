@@ -242,6 +242,9 @@ p {
     margin-bottom: 40px;
 }
 
+.highlight strong{
+  color: #a61d0e;
+}
 
 @media screen and (max-width: 1024px) {
   #divider {
