@@ -1,0 +1,21 @@
+#arrow6{
+    position: absolute;
+    left: 400px;
+    top: 240vh;
+    display:none;
+  }
+  
+  #arrow7{
+    position: absolute;
+    left: 400px;
+    top: 305vh;
+    display:none;
+  }
+
+  .tutorial-arrow{
+    width: 40px;
+}
+
+.audio{
+  display:none;
+}
