@@ -3,6 +3,7 @@
     <title>Financial Chart</title>
     <link class="theme" href="overall.css" type="text/css" rel="stylesheet" />
     <link class="individualtheme" href="financials.css" type="text/css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery.js"></script>
 
   </head>
   <body>
@@ -109,7 +110,7 @@
     <p id = "title2">Financials</p>
 
       <div id="chart-container">
-        <canvas id="myChart"></canvas>
+        <canvas width="1920" height="1080" id="myChart"></canvas>
       </div>
       <div>
         <label for="timeframe-slider">Timeframe:</label>
@@ -128,13 +129,12 @@
  
   </div>
 </div>    
-
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="financials.js"></script>  
+    <script src="financials.js">
+    </script>  
 
     <div id="footer">
-      <div id="footer">
         <svg
           width="1512"
           height="427"
@@ -176,7 +176,6 @@
             Copyright © El Tigre Café. All rights reserved.
           </div>
         </div>
-      </div>
     </div>
   </body>
 </html>
