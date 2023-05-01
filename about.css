@@ -93,7 +93,8 @@
 @media only screen and (max-width: 768px) {
     #hero {
       height: 50vh;
-      background-size: contain;
+      background-size: 150%;
+
     }
 
     #aboutthegame {
@@ -140,4 +141,3 @@
       padding-top: 60px;
     }
   }
-</style>

@@ -261,8 +261,8 @@ a{
 }
 
 
-/* adaptive*/
-@media screen and (max-width: 1000px) {
+/* adaptive ipad*/
+@media screen and (max-width: 1024px) {
     #modes{
         visibility: hidden;
     }
@@ -280,6 +280,16 @@ a{
 
     #header-logo{
         visibility: hidden;
+    }
+
+    @media screen and (max-width: 768px) {
+        #download{
+            width: 100px;
+            right: 20px;
+        }
+
+        
+
     }
 
 }
