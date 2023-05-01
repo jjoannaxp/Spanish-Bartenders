@@ -261,8 +261,8 @@ a{
 #modes:hover .dropdown-content {
   display: block;
 }
-
-@media screen and (max-width: 1000px) {
+/* adaptive ipad*/
+@media screen and (max-width: 1024px) {
     #modes{
         visibility: hidden;
     }
@@ -280,6 +280,27 @@ a{
 
     #header-logo{
         visibility: hidden;
+    }
+
+    .button{
+        width: 300px;
+    }
+
+    /* adaptive phone*/
+    @media screen and (max-width: 768px) {
+        #download{
+            width: 100px;
+            right: 20px;
+        }
+
+        #download-footer{
+            width: 300px;
+        }
+
+        #footer{
+            height: 0px;
+        }
+
     }
 
 }

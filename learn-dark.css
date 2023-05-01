@@ -302,3 +302,34 @@ font-family: 'Poppins', sans-serif;
     color:  #6D1E15;
     font-weight: bold;
   }*/
+@media screen and (max-width: 1024px) {
+
+
+  #learn{
+    margin-top: -40px;
+  }
+  #features ul li{
+    margin-top: 10px;
+   
+  }
+
+  #features{
+    padding-left: 70px;
+  }
+  
+  #levelgroup {
+    flex-direction: column;
+
+  }
+
+  #level h1{
+    margin-bottom: -100px;
+  }
+
+  .leveldetail{
+    width: 80%;
+    height: 400px;
+    margin-top: 100px;
+  }
+  
+}

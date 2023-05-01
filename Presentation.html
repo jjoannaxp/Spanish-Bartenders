@@ -3,15 +3,12 @@
     <title>Home</title>
     <link class="theme" href="overall.css" type="text/css" rel="stylesheet" />
    
-    <link
-      class="individualtheme"
-      href="home.css"
-      type="text/css"
-      rel="stylesheet"
-    />
+    <link class="individualtheme" href="home.css" type="text/css" rel="stylesheet"/>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="overall.js"></script>
-    <script src = "home.js"></script>
+
+    <link href="presentation.css" type="text/css" rel="stylesheet">
+    <script src="presentation.js"></script>
   </head>
   <body>
     <div id="header">
@@ -20,14 +17,14 @@
           <a href="home.html">
             <img src="assets/logo.png" id="header-logo" />
           </a>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="howtoplay.html">How To Play</a></li>
-          <li><a href="Learn.html">Learn</a></li>
-          <li><a href="team.html">Team</a></li>
+          <li><a href="Presentation.html">Home</a></li>
+          <li><a href="about-presentation.html" id="about-page">About</a></li>
+          <li><a href="howtoplay-presentation.html">How To Play</a></li>
+          <li><a href="learn-presentation.html">Learn</a></li>
+          <li><a href="team-presentation.html">Team</a></li>
         </ul>
         <div id="sidebuttons">
-          <a href="download.html"><div id="Download">Download</div></a>
+          <a href="download-presentation.html"><div id="Download">Download</div></a>
           <div id="modes">
             <div id="modebutton">
               Light Mode
@@ -41,41 +38,40 @@
         </div>
       </div>
     </div>
-    <div id="container">
-      <div id="hero-background">
-      <div id="hero">
-        <div id="arrow1"style="position: absolute; top: 65; left: 170;">
-            <img src="uparrow.png">
-        </div>
 
-        <div id="arrow2"style="position: absolute; top: 65; left: 270;">
-            <img src="uparrow.png">
-        </div>
-
-        <div id="arrow3"style="position: absolute; top: 65; left: 390;">
-            <img src="uparrow.png">
-        </div>
-
-        <div id="arrow4"style="position: absolute; top: 65; left: 520;">
-            <img src="uparrow.png">
-        </div>
-
-        <div id="arrow5"style="position: absolute; top: 65; left: 610;">
-            <img src="uparrow.png">
-        </div>
-
-        <div id="circle"style="width: 10;">
-            <img src="circlegif.gif">
-        </div>
-
-
-
-
-        <video width="300px" autoplay muted>
-          <source src="assets/logo.mov" type="video/mp4">
-
-        </video>
     
+    <div id="container">
+      
+      <div id="hero-background">
+        
+      <div id="hero">
+        
+        <div  id="arrow1"class="arrowdiv">
+          <img src="uparrow.png" class="tutorial-arrow">
+        </div>
+    
+        <div id="arrow2" class="arrowdiv">
+            <img src="uparrow.png" class="tutorial-arrow">
+        </div>
+    
+        <div id="arrow3" class="arrowdiv">
+            <img src="uparrow.png" class="tutorial-arrow">
+        </div>
+    
+        <div id="arrow4" class="arrowdiv" >
+            <img src="uparrow.png" class="tutorial-arrow">
+        </div>
+    
+        <div id="arrow5" class="arrowdiv">
+            <img src="uparrow.png" class="tutorial-arrow">
+        </div> 
+    
+       
+            <img src="circlegif.gif" id="circle">
+    
+        <div id="tutorialbutton" class="button">Start Tutorial</div>
+        
+        <img src="assets/please.gif" style="width: 300px">
         <div id="slogan">One shot of Spanish please!</div>
         <a href="download.html"
           ><div id="downloadforfree" class="button">DOWNLOAD FOR FREE</div></a
@@ -109,6 +105,18 @@
         >
       </div>
     </div>
+    <audio id="audio-1" class="audio">
+      <source src="audios/audio1.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio-2" class="audio">
+      <source src="audios/audio2.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio-3" class="audio">
+      <source src="audios/audio3.mp3" type="audio/mp3">
+    </audio>
+    <audio id="aboutaudio" class="audio">
+      <source src="audios/audio190.mp3" type="audio/mp3">
+    </audio>
 
     <div id="footer">
       <div id="footer">
@@ -134,6 +142,8 @@
         </div>
       </div>
     </div>
+
+    
   </body>
 
   <script>
@@ -162,18 +172,5 @@
         $("li > a").css("color", "#F0E5D3");
       }
     }
-  </script>
-  <script>
-    $(document).ready(function(){
-    });
-
-    $("#arrow1").on("click",function(){
-		$("#arrow1").animate({	
-			"width": "200px",
-			"height": "500px",
-			"left": "300px",
-            "font-size": "36pt"
-		}, 2000);
-});
   </script>
 </html>
