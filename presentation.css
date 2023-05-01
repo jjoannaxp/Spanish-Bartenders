@@ -27,3 +27,13 @@
 .audio{
     display:none;
 }
+
+.circle{
+    position: absolute;
+    opacity: 0;
+}
+
+#learncircle{
+    width: 300px;
+    top: 0px;
+}
