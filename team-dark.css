@@ -1,20 +1,181 @@
 
 body{
     position: relative;
-    
 }
 
 .content{
-    color:#F0E5D3;
-    padding: 50px;
+    padding: 100px;
     padding-top: 150px;
+}
+.content2{
+    padding: 100px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    font-size: 20px;
+    font-family: 'Chelsea Market', cursive;
+    color: #334B29;
+
+}
+
+#title{
+    margin-top: 80px;
 }
 
 .pictures{
-    color:#F0E5D3;
+    position: absolute;
     margin-top: -10px;
-    margin-left: 25%;
-    margin-right: 25%;
-    height: 600px;
-    width: 50%;
+    right: 29%;
+    height: 660px;
+    width: 600px;
 }
+
+.item_description{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 24px;
+    color: #334B29;
+}
+
+.item_description em{
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.photosection{
+    background-image: url("workingphoto/IMG_8210.jpeg"),
+                      url("workingphoto/IMG_8213.jpeg"),
+                      url("workingphoto/IMG_8209.jpeg");
+    
+    background-position: left top,
+                         center top,
+                         right top;
+
+    background-repeat: no-repeat;
+    background-size: 33.3% 500px,
+                     33.4% 500px,
+                     33.3% 500px;
+    height: 500px;  
+    margin-top: -100px;     
+    margin-left: -100px;      
+    margin-right: -100px;  
+}
+
+#footer{
+    top: 700px;
+}
+
+.body1{
+    margin-bottom: -10px;
+   
+}
+
+.content2{
+    color: #a1d18c;
+}
+
+.content{
+    color: white;
+}
+
+.item_description{
+    color: #FFE491;
+}
+
+.item_description em{
+    color: white;
+}
+
+.button{
+    margin-top: 600px;
+    margin-bottom: -600px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .body1{
+        margin-bottom: 10px;
+    }
+
+    .content{
+        padding-top: 150px;
+    }
+
+    .photosection{
+        background-image: url("workingphoto/IMG_8210.jpeg"),
+                          url("workingphoto/IMG_8213.jpeg"),
+                          url("workingphoto/IMG_8209.jpeg")
+                          ;
+        
+        background-position: left top,
+                             center top,
+                             right top;
+    
+        background-repeat: no-repeat;
+        background-size: 33.3% 400px,
+                         33.4% 400px,
+                         33.3% 400px;
+        height: 500px;  
+        margin-top: -100px;     
+        margin-left: -100px;      
+        margin-right: -100px;  
+    }
+
+    #title{
+        margin-top: -80px;
+    }
+
+    .pictures{
+        right: 19%;
+    }
+    .button{
+        margin-top: 600px;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+
+
+    .content{
+        padding: 10px;
+        padding-top: 150px;
+    }
+
+    .photosection{
+        background-image: url("workingphoto/IMG_8210.jpeg"),
+                          url("workingphoto/IMG_8213.jpeg"),
+                          url("workingphoto/IMG_8209.jpeg")
+                          ;
+        
+        background-position: left top,
+                             center top,
+                             right top;
+    
+        background-repeat: no-repeat;
+        background-size: 33.3% 350px,
+                         33.4% 350px,
+                         33.3% 350px;
+        height: 500px;  
+        margin-top: -100px;     
+        margin-left: -100px;      
+        margin-right: -100px;  
+    }
+
+    .pictures{
+        width: 400px;
+        right: 20%;
+        height: 300px;
+    }
+
+    #footer{
+        top: 1000px;
+    }
+
+
+    .button{
+        margin-top: 850px;
+        margin-bottom: -800px;
+    }
+
+  }

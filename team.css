@@ -52,7 +52,7 @@ body{
 
     background-repeat: no-repeat;
     background-size: 33.3% 500px,
-                     33.3% 500px,
+                     33.4% 500px,
                      33.3% 500px;
     height: 500px;  
     margin-top: -100px;     
@@ -68,6 +68,12 @@ body{
     margin-bottom: -10px;
 }
 
+.button{
+    margin-top: 600px;
+    margin-bottom: -600px;
+}
+
+
 @media screen and (max-width: 1024px) {
 
     .body1{
@@ -75,7 +81,6 @@ body{
     }
 
     .content{
-        padding: 10px;
         padding-top: 150px;
     }
 
@@ -91,7 +96,7 @@ body{
     
         background-repeat: no-repeat;
         background-size: 33.3% 400px,
-                         33.3% 400px,
+                         33.4% 400px,
                          33.3% 400px;
         height: 500px;  
         margin-top: -100px;     
@@ -107,13 +112,14 @@ body{
         right: 19%;
     }
     .button{
-        margin-bottom: 70px;
+        margin-top: 600px;
     }
-    
   }
 
 
   @media screen and (max-width: 768px) {
+
+
     .content{
         padding: 10px;
         padding-top: 150px;
@@ -131,7 +137,7 @@ body{
     
         background-repeat: no-repeat;
         background-size: 33.3% 350px,
-                         33.3% 350px,
+                         33.4% 350px,
                          33.3% 350px;
         height: 500px;  
         margin-top: -100px;     
@@ -147,6 +153,12 @@ body{
 
     #footer{
         top: 1000px;
+    }
+
+
+    .button{
+        margin-top: 850px;
+        margin-bottom: -800px;
     }
 
   }

@@ -3,7 +3,7 @@
 /*
 font-family: 'Chelsea Market', cursive;
 font-family: 'Poppins', sans-serif;
-
+ 
 #F0E5D3 : tan 
 #6D1E15: brown
 #FFE491: yellow
@@ -287,6 +287,10 @@ a{
         width: 300px;
     }
 
+    #footer-background{
+        width: 200%;
+    }
+
     /* adaptive phone*/
     @media screen and (max-width: 768px) {
         #modes{
@@ -302,9 +306,6 @@ a{
             width: 300px;
         }
 
-        #footer{
-            height: 0px;
-        }
 
     }
 
