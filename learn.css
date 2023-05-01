@@ -263,6 +263,16 @@ padding-top: 10%;
   border-radius: 4px;
 }
 
+#highscore {
+  width: 500px;
+  height: 500px;
+  top: 20%;
+  right: 15%;
+  z-index: 10000;
+  position: fixed;
+}
+
+
   /*
   #level h3:first-of-type {
     margin-top: 0;
