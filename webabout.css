@@ -1,3 +1,4 @@
+
 #my-slider{
     width: fit-content;
     margin:auto;
@@ -125,3 +126,16 @@
     margin-bottom: 20px;
 }
 
+
+#footer{
+  margin-top: -700px;
+}
+
+@media screen and (max-width: 1024px) {
+  #sliderstuff{
+    flex-direction: column;
+    gap: 0px;
+  }
+
+
+}
