@@ -1,12 +1,12 @@
 $(document).ready(function () {
   $("#my-slider").slick({
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
 
-    speed: 1000,
+    speed: 700,
     arrows: true,
     prevArrow:
-      '<button type="button" class="slick-prev"></i></button>',
+      '<button type="button" class="slick-prev"></button>',
     nextArrow:
       '<button type="button" class="slick-next"></button>',
     dots: true,
@@ -19,4 +19,6 @@ $(document).ready(function () {
       },
     ],
   });
+
+
 });
