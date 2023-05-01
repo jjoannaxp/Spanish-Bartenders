@@ -95,19 +95,20 @@ li a:hover{
     height: 200px;
     margin-left: 10%;
     display: none;
+    z-index: 99999;
     
 }
 
 .horizontal {
     height: 200px;
     position: absolute;
-    display: none;
+    /* display: none; */
     animation: bounceHorizontal 2s infinite;
   }
 .vertical {
   height: 200px;
   position: absolute;
-  display: none;
+  /* display: none; */
   animation: bounceVertical 2s infinite;
 }
   
