@@ -101,3 +101,12 @@ font-family: 'Poppins', sans-serif;
     margin-bottom: 200px;
     margin-top: 0px;
 }
+
+@media screen and (max-width: 1000px) {
+    #hero{
+        background-size: 150%;
+        height: 65vh;
+    }
+
+
+}

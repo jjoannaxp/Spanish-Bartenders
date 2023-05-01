@@ -260,3 +260,26 @@ a{
   display: block;
 }
 
+
+/* adaptive*/
+@media screen and (max-width: 1000px) {
+    #modes{
+        visibility: hidden;
+    }
+
+    #download{
+        position: absolute;
+        top: 30px;
+    }
+
+    ul{
+        font-size: 14px;
+        gap: 15px;
+        margin-left: -48px;
+    }
+
+    #header-logo{
+        visibility: hidden;
+    }
+
+}

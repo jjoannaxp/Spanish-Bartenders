@@ -102,3 +102,21 @@ body{
     color: #F0E5D3;
 }
 
+@media screen and (max-width: 1000px) {
+    .play-background{
+        margin: 0px;
+    }
+
+    .playimg{
+        margin: 10px;
+        margin-left: -2px;
+        width: 25%;
+    }
+
+    .goal{
+        margin-left: -200px;
+        margin-right: -200px;
+    }
+
+}
+
