@@ -19,6 +19,7 @@
 
 #quiz-form h1{
   font-size: 20px;
+  color:#334B29;
 }
 
 #top h1 {
@@ -249,7 +250,7 @@ padding-top: 10%;
   border-radius: 4px;
 }
 
-#button2 {
+#close {
   background-color: #6D1E15;
   border: none;
   color: white;
