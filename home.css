@@ -1,9 +1,6 @@
 
 
 
-#hero-logo{
-    width: 300px;
-}
 
 #hero{
     display:flex;
@@ -87,4 +84,13 @@
 #aboutsection{
     margin-bottom: 200px;
     margin-top: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+    #hero{
+        background-size: 150%;
+        height: 65vh;
+    }
+
+
 }
