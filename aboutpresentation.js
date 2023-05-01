@@ -1,12 +1,6 @@
 $(document).ready(function () {
 
     $("#audio-4")[0].play();
-
-    setTimeout(function() {
-        $("#arrow6").css("display", "block");
-        $("#arrow7").css("display", "block");
-    }, 13000);
-    
     setTimeout(function() {
         $("#audio-5")[0].play();
         $('html, body').animate({
@@ -16,8 +10,11 @@ $(document).ready(function () {
     setTimeout(function() {
         // scroll to div named title
         $('html, body').animate({
-            scrollTop: $("#fox").offset().top
+            scrollTop: $("#fox").offset().top - ($(window).height() / 8)
         }, 2000);
     }, 30000);
+    setTimeout(function() {
+        $("#audio-6")[0].play();
+    }, 35000);
         
 });
