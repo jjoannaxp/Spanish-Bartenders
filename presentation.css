@@ -1,0 +1,45 @@
+#arrow1 {
+  position: absolute;
+ 
+  left: 180px;
+}
+#arrow2 {
+  position: absolute;
+  left: 270px;
+}
+#arrow3 {
+  position: absolute;
+  left: 390px;
+}
+#arrow4 {
+  position: absolute;
+  left: 520px;
+}
+#arrow5 {
+  position: absolute;
+  left: 610px;
+}
+
+#circle{
+  position:absolute;
+  top: 10px;
+  left: 84vw;
+    width:100px;
+    z-index: 99;
+}
+.arrowdiv{
+    top:100vh;
+}
+
+.tutorial-arrow{
+    width: 40px;
+}
+#tutorialbutton{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.audio{
+    display:none;
+}

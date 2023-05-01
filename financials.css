@@ -37,13 +37,13 @@
 #image-container {
     position: absolute;
     left: -50%;
-    top: 25%;
+    top: 20%;
   }
 
 #image-container img {
     height: 50%;
     width: 8%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
 #image-container2 {
