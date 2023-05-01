@@ -73,15 +73,3 @@ function getProjectedData(label, timeframe) {
   }
   return data;
 }
-
-$(document).ready(function() {
-  $(window).on('resize', function(){
-    console.log("resize");
-    // resize myChart
-    var ctx = document.getElementById('myChart').getContext('2d');
-    ctx.canvas.width = window.innerWidth; // resize to parent width
-    ctx.canvas.height = window.innerHeight; // resize to parent height
-    myChart.resize();
-      
-});
-});
