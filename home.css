@@ -11,8 +11,9 @@
     background-image: url(assets/homeimage.jpeg);
     background-repeat:no-repeat;
     background-size: 100%;
+    background-size: cover;
     border-bottom-right-radius: 100% 40%;
-  border-bottom-left-radius: 100% 40%;
+    border-bottom-left-radius: 100% 40%;
     height: 95vh;
     border-bottom: black solid 2px;
     background-position:center;

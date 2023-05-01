@@ -3,15 +3,14 @@
     <title>Home</title>
     <link class="theme" href="overall.css" type="text/css" rel="stylesheet" />
    
-    <link
-      class="individualtheme"
-      href="home.css"
-      type="text/css"
-      rel="stylesheet"
+    <link class="individualtheme" href="home.css" type="text/css" rel="stylesheet"
     />
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="overall.js"></script>
     <script src = "home.js"></script>
+
+    <link href="presentation.css" type="text/css" rerl="stylesheet">
+    <script src="presentation.js"></script>
   </head>
   <body>
     <div id="header">
@@ -41,41 +40,38 @@
         </div>
       </div>
     </div>
-    <div id="container">
-      <div id="hero-background">
-      <div id="hero">
-        <div id="arrow1"style="position: absolute; top: 65; left: 170;">
-            <img src="uparrow.png">
-        </div>
 
-        <div id="arrow2"style="position: absolute; top: 65; left: 270;">
-            <img src="uparrow.png">
-        </div>
-
-        <div id="arrow3"style="position: absolute; top: 65; left: 390;">
-            <img src="uparrow.png">
-        </div>
-
-        <div id="arrow4"style="position: absolute; top: 65; left: 520;">
-            <img src="uparrow.png">
-        </div>
-
-        <div id="arrow5"style="position: absolute; top: 65; left: 610;">
-            <img src="uparrow.png">
-        </div>
-
-        <div id="circle"style="width: 10;">
-            <img src="circlegif.gif">
-        </div>
-
-
-
-
-        <video width="300px" autoplay muted>
-          <source src="assets/logo.mov" type="video/mp4">
-
-        </video>
     
+    <div id="container">
+      
+      <div id="hero-background">
+        
+      <div id="hero">
+        <div class="arrow" id="arrow1">
+          <img src="uparrow.png">
+        </div>
+    
+        <div id="arrow2" class="arrow">
+            <img src="uparrow.png">
+        </div>
+    
+        <div id="arrow3" class="arrow">
+            <img src="uparrow.png">
+        </div>
+    
+        <div id="arrow4" class="arrow">
+            <img src="uparrow.png">
+        </div>
+    
+        <div id="arrow5" class="arrow">
+            <img src="uparrow.png">
+        </div> 
+    
+        <div>
+            <img src="circlegif.gif" id="circle">
+        </div>
+        
+        <img src="assets/please.gif" style="width: 300px">
         <div id="slogan">One shot of Spanish please!</div>
         <a href="download.html"
           ><div id="downloadforfree" class="button">DOWNLOAD FOR FREE</div></a
@@ -162,18 +158,5 @@
         $("li > a").css("color", "#F0E5D3");
       }
     }
-  </script>
-  <script>
-    $(document).ready(function(){
-    });
-
-    $("#arrow1").on("click",function(){
-		$("#arrow1").animate({	
-			"width": "200px",
-			"height": "500px",
-			"left": "300px",
-            "font-size": "36pt"
-		}, 2000);
-});
   </script>
 </html>

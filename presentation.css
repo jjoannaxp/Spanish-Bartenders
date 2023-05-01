@@ -1,0 +1,28 @@
+#arrow1 {
+  position: absolute;
+  top: 10px;
+  
+  left: 170px;
+}
+#arrow2 {
+  position: absolute;
+  left: 270px;
+}
+#arrow3 {
+  position: absolute;
+  left: 390px;
+}
+#arrow4 {
+  position: absolute;
+  left: 520px;
+}
+#arrow5 {
+  position: absolute;
+  left: 610px;
+}
+
+#circle{
+    width:100px;
+}
+
+
