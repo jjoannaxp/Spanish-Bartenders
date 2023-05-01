@@ -17,12 +17,16 @@ body{
 
 }
 
+#title{
+    margin-top: 80px;
+}
+
 .pictures{
+    position: absolute;
     margin-top: -10px;
-    margin-left: 29%;
-    margin-right: 29%;
+    right: 29%;
     height: 660px;
-    width: 42%;
+    width: 600px;
 }
 
 .item_description{
@@ -40,19 +44,109 @@ body{
 .photosection{
     background-image: url("workingphoto/IMG_8210.jpeg"),
                       url("workingphoto/IMG_8213.jpeg"),
-                      url("workingphoto/IMG_8209.jpeg")
-                      ;
+                      url("workingphoto/IMG_8209.jpeg");
     
     background-position: left top,
                          center top,
                          right top;
 
     background-repeat: no-repeat;
-    background-size: 510px 450px,
-                     510px 450px,
-                     510px 450px;
+    background-size: 33.3% 500px,
+                     33.3% 500px,
+                     33.3% 500px;
     height: 500px;  
-    margin-top: -70px;     
+    margin-top: -100px;     
     margin-left: -100px;      
-    margin-right: -100px;    
+    margin-right: -100px;  
 }
+
+#footer{
+    top: 700px;
+}
+
+.body1{
+    margin-bottom: -10px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .body1{
+        margin-bottom: 10px;
+    }
+
+    .content{
+        padding: 10px;
+        padding-top: 150px;
+    }
+
+    .photosection{
+        background-image: url("workingphoto/IMG_8210.jpeg"),
+                          url("workingphoto/IMG_8213.jpeg"),
+                          url("workingphoto/IMG_8209.jpeg")
+                          ;
+        
+        background-position: left top,
+                             center top,
+                             right top;
+    
+        background-repeat: no-repeat;
+        background-size: 33.3% 400px,
+                         33.3% 400px,
+                         33.3% 400px;
+        height: 500px;  
+        margin-top: -100px;     
+        margin-left: -100px;      
+        margin-right: -100px;  
+    }
+
+    #title{
+        margin-top: -80px;
+    }
+
+    .pictures{
+        right: 19%;
+    }
+    .button{
+        margin-bottom: 70px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .content{
+        padding: 10px;
+        padding-top: 150px;
+    }
+
+    .photosection{
+        background-image: url("workingphoto/IMG_8210.jpeg"),
+                          url("workingphoto/IMG_8213.jpeg"),
+                          url("workingphoto/IMG_8209.jpeg")
+                          ;
+        
+        background-position: left top,
+                             center top,
+                             right top;
+    
+        background-repeat: no-repeat;
+        background-size: 33.3% 350px,
+                         33.3% 350px,
+                         33.3% 350px;
+        height: 500px;  
+        margin-top: -100px;     
+        margin-left: -100px;      
+        margin-right: -100px;  
+    }
+
+    .pictures{
+        width: 400px;
+        right: 20%;
+        height: 300px;
+    }
+
+    #footer{
+        top: 1000px;
+    }
+
+  }
