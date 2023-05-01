@@ -68,3 +68,10 @@
     left: 1300px;
     width: 200px;
 }
+
+#arrowbusiness .tutorial-arrow{
+    position: absolute;
+    top: 160px;
+    left: 900px;
+    width: 200px;
+}
