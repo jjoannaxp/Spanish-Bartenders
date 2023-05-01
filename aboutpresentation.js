@@ -19,4 +19,5 @@ $(document).ready(function () {
             scrollTop: $("#fox").offset().top
         }, 2000);
     }, 30000);
+        
 });
