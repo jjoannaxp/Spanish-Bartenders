@@ -9,13 +9,16 @@ font-family: 'Poppins', sans-serif;
 #FFE491: yellow
 #334B29: green
 */
+html {
+    scroll-behavior: smooth;
+  }
 
 #header-logo{
     width: 100px;
 }
 
+
 body{
-    
     background-color: #F0E5D3;
     font-family: 'Poppins', sans-serif;
     margin:0;

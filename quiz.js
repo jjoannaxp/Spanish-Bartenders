@@ -34,7 +34,7 @@ $(document).ready(function() {
 
       setTimeout(function() {
         $("#highscore").hide();
-      }, 1000);
+      }, 2000);
 
     var angle = 5;
 var rotate = function() {

@@ -1,6 +1,5 @@
 #arrow1 {
   position: absolute;
- 
   left: 180px;
 }
 #arrow2 {
@@ -28,6 +27,7 @@
     z-index: 99;
     display:none;
 }
+
 .arrowdiv{
     top:100vh;
 }
@@ -35,6 +35,7 @@
 .tutorial-arrow{
     width: 40px;
 }
+
 #tutorialbutton{
     padding-top: 10px;
     padding-bottom: 10px;
