@@ -164,6 +164,144 @@ font-family: 'Poppins', sans-serif;
       color: #FFE491;
     }
     
+  #popup {
+    position: fixed;
+    bottom: -2%;
+    right: 2%;
+    width: 300px;
+    height: 150px;
+    background-image: url("cloud.png"); 
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    opacity: 90%;
+    border-radius: 10%;
+  }
+  
+  
+  #popup-content p {
+    margin-top: 12%;
+    font-family: 'Chelsea Market', cursive;
+    color: #334B29;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  #popup-message {
+    border: 2px solid #6D1E15;
+    border-radius: 20px;
+    color:#6D1E15;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    margin-top: -20%;
+    display: block;
+    margin-top: -5%;
+    margin: auto;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+    }
+
+#popup:hover #popup-content p,
+#popup:hover #popup-message {
+  opacity: 1;
+}
+#popup:hover {
+  transform: scale(1.1);
+}
+#popup-message:hover {
+  background-color: #6D1E15;
+  color: white;
+}
+
+#largeDiv {
+  position: fixed;
+  top: 44%;
+  right: 1%;
+  height: 55%;
+  width: 20%;
+  margin-top: -16%;
+  background-color:#F0E5D3; 
+  z-index: 9999;
+  border-radius: 100px;
+  padding: 40px;
+  border: 10px solid #334B29;
+  opacity: 90%;
+  overflow-y: scroll;
+}
+
+#largeDiv::-webkit-scrollbar {
+  width: 12px;
+  right: 5px;
+}
+
+#largeDiv::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#largeDiv::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 20px;
+  border: 3px solid #f1f1f1;
+}
+
+#button1 {
+  background-color: #334B29;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#close {
+  background-color: #6D1E15;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#highscore {
+  width: 500px;
+  height: 500px;
+  top: 20%;
+  right: 15%;
+  z-index: 10000;
+  position: fixed;
+}
+
+
+  /*
+  #level h3:first-of-type {
+    margin-top: 0;
+  }
+  
+  #level ul:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  #level ul:nth-of-type(2) li:nth-of-type(4),
+  #level ul:nth-of-type(3) li:nth-of-type(4) {
+    font-weight: bold;
+  }
+  
+  #level ul:nth-of-type(2) li:nth-of-type(4)::after,
+  #level ul:nth-of-type(3) li:nth-of-type(4)::after {
+    content: " (Conjugation)";
+    color:  #6D1E15;
+    font-weight: bold;
+  }*/
 @media screen and (max-width: 1024px) {
 
 

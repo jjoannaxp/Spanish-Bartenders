@@ -2,7 +2,6 @@
   <head>
     <title>Learn Spanish</title>
     <link class="theme" href="overall.css" type="text/css" rel="stylesheet" />
-    <meta charset="UTF-8">
     <link
       class="individualtheme"
       href="learn.css"
@@ -11,38 +10,40 @@
     />
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="overall.js"></script>
+    <script src="quiz.js"></script>
+
+    <link href="presentation.css" type="text/css" rel="stylesheet">
+    <script src="presentation.js"></script>
   </head>
 
   <body>
     <div id="header">
-      <div id="nav">
-        <ul id="menu">
-          <a href="home.html">
-            <img src="assets/logo.png" id="header-logo" />
-          </a>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="howtoplay.html">How To Play</a></li>
-          <li><a href="Learn.html">Learn</a></li>
-          <li><a href="team.html">Team</a></li>
-        </ul>
-        <div id="sidebuttons">
-          <a href="download.html"><div id="Download">Download</div></a>
-          <div id="modes">
-            <div id="modebutton">
-              Light Mode
-              <img src="assets/chevron-black-down.png" id="dropdown-chevron" />
-            </div>
-            <div id="modedrops" class="dropdown-content">
-              <div id="light" class="drops">Light Mode</div>
-              <div id="dark" class="drops">Dark Mode</div>
+        <div id="nav">
+          <ul id="menu">
+            <a href="home.html">
+              <img src="assets/logo.png" id="header-logo" />
+            </a>
+            <li><a href="Presentation.html">Home</a></li>
+            <li><a href="about-presentation.html">About</a></li>
+            <li><a href="howtoplay-presentation.html">How To Play</a></li>
+            <li><a href="learn-presentation.html">Learn</a></li>
+            <li><a href="team-presentation.html">Team</a></li>
+          </ul>
+          <div id="sidebuttons">
+            <a href="download-presentation.html"><div id="Download">Download</div></a>
+            <div id="modes">
+              <div id="modebutton">
+                Light Mode
+                <img src="assets/chevron-black-down.png" id="dropdown-chevron" />
+              </div>
+              <div id="modedrops" class="dropdown-content">
+                <div id="light" class="drops">Light Mode</div>
+                <div id="dark" class="drops">Dark Mode</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <img id="highscore" src="highscore.png">
-
     <div id="container">
         <div id="top-image"></div>
         <div id="top">
@@ -167,17 +168,12 @@
           <div id="copyright">
             Copyright © El Tigre Café. All rights reserved.
           </div>
-        </div>
-        
-        
-        <script src="quiz.js"></script>
           <div id="popup">
             <div id="popup-content">
               <p>Test Your Skills!</p>
               <button id="popup-message">Let's Go!</button>
             </div>
             </div>
-            
           <div id="largeDiv">
 Try a few Spanish Practice Questions
 <form id="quiz-form">
@@ -256,28 +252,24 @@ Try a few Spanish Practice Questions
 <div class="feedback" data-answer="a,c"></div>
 </div>
 
-<div id="q9">
+<div id="q9"></div>
 <p>Which phrase is conjugated correctly in Spanish?</p>
 <input type="radio" name="q9" value="a"> Yo prepararé un café para el cliente.<br>
 <input type="radio" name="q9" value="b"> Nosotros prepararán dos capuchinos para la mesa tres.<br>
 <input type="radio" name="q9" value="c"> Él prepara un latte cada mañana antes de trabajar.<br>
 <div class="feedback" data-answer="c"></div>
 <div class="feedback" data-answer="a,b"></div>
-</div>
 <br>
-<button id="button1">Submit</button>
+<button id="button1">Submit</button> <button id="close">Close</button>
 </form>
-<button id="close">Close</button>
 </div>
-
-
 
       </div>
     </div>
+    
 
         </div>
       </div>
-      
       
 </body>
 
