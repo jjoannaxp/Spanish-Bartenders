@@ -43,3 +43,15 @@
     top: 110px;
     left: 600px;
 }
+
+#arrowdownload{
+    position: fixed;
+    top: 110px;
+    left: 1200px;
+}
+
+#teamcircle{
+    top: -110px;
+    left: 300px;
+    width: 800px;
+}
