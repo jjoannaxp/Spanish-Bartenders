@@ -21,6 +21,10 @@ var chartData = {
       backgroundColor: "#334B29",
     },
   ],
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+}
 };
 
 var myChart = new Chart(ctx, {
@@ -29,26 +33,26 @@ var myChart = new Chart(ctx, {
 });
 
 
-// Get the slider element and chart instance
+//get the slider element and chart instance
 var slider = document.getElementById("timeframe-slider");
 var chart = myChart;
 
-// Add an event listener to the slider
+//add an event listener to the slider
 slider.addEventListener("input", function () {
-  // Get the slider value
+  //get the slider value
   var timeframe = this.value;
 
-  // Update the chartData object with the new timeframe
+  //update the chartData object with the new timeframe
   chartData.labels = getProjectedLabels(timeframe);
   chartData.datasets.forEach(function (dataset) {
     dataset.data = getProjectedData(dataset.label, timeframe);
   });
 
-  // Update the chart with the new data
+  // update the chart with the new data
   chart.update();
 });
 
-// Helper function to generate projected labels based on timeframe
+// helper function to generate projected labels based on timeframe
 function getProjectedLabels(timeframe) {
   var labels = [];
   for (var i = 0; i < timeframe; i++) {
@@ -57,15 +61,27 @@ function getProjectedLabels(timeframe) {
   return labels;
 }
 
-// Helper function to generate projected data based on label and timeframe
+// helper function
 function getProjectedData(label, timeframe) {
   var data = [];
   var initialData = chartData.datasets.find(function (dataset) {
     return dataset.label === label;
   }).data;
-  var growthRate = 1.1; // Example growth rate
+  var growthRate = 1.1; //10% growth rate
   for (var i = 0; i < timeframe; i++) {
     data.push(initialData[initialData.length - 1] * Math.pow(growthRate, i + 1));
   }
   return data;
 }
+
+$(document).ready(function() {
+  $(window).on('resize', function(){
+    console.log("resize");
+    // resize myChart
+    var ctx = document.getElementById('myChart').getContext('2d');
+    ctx.canvas.width = window.innerWidth; // resize to parent width
+    ctx.canvas.height = window.innerHeight; // resize to parent height
+    myChart.resize();
+      
+});
+});
