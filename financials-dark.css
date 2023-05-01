@@ -250,11 +250,15 @@ p {
   margin-bottom: 40px;
 }
 
+.highlight strong{
+  color: #FFE491;
+}
+
 
 @media screen and (max-width: 1024px) {
   #divider {
     left: 25%;
-  }
+  } 
 
   #image-container{
     position: absolute;

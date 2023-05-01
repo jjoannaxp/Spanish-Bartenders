@@ -102,7 +102,7 @@ body{
     color: #F0E5D3;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
     .play-background{
         margin: 0px;
     }
@@ -110,7 +110,6 @@ body{
     .playimg{
         margin: 10px;
         margin-left: -2px;
-        width: 25%;
     }
 
     .goal{
@@ -118,5 +117,33 @@ body{
         margin-right: -200px;
     }
 
-}
+    .topbar{
+        background-size: 
+        160px 280px,
+        160px 280px,
+        160px 280px,
+        160px 280px,
+        160px 280px;
 
+        background-position: 
+        0px 130px,
+        200px 130px,
+        400px 130px,
+        600px 130px,
+        800px 130px;
+
+        height: 400px;
+
+    }
+
+    #maintitle{
+        margin-top: 400px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .playimg{
+            width: 0;
+            visibility: hidden;
+        }
+
+    }}
