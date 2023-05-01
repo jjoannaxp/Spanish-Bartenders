@@ -50,3 +50,20 @@
 #pricing-model button:hover {
     background-color: #6D1E15;
 }
+
+#footer{
+    top: 100px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #pricing-model{
+        margin-top: 100px;
+    }
+
+    #footer{
+        top: 80px;
+    }
+
+
+}
