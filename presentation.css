@@ -26,6 +26,7 @@
   left: 84vw;
     width:100px;
     z-index: 99;
+    display:none;
 }
 .arrowdiv{
     top:100vh;
