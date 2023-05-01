@@ -2,7 +2,9 @@
   <head>
     <title>Home</title>
     <link class="theme" href="overall.css" type="text/css" rel="stylesheet" />
-   
+    <script src="https://cdn.jsdelivr.net/npm/three@0.138.3/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.138.3/examples/js/loaders/FBXLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fflate@0.7.4/umd/index.min.js"></script>
     <link class="individualtheme" href="home.css" type="text/css" rel="stylesheet"/>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="overall.js"></script>
@@ -156,7 +158,7 @@
     // if about page clicked, load about page html without refreshing with ajax
     $("#about-page").click(function () {
       console.log("about clicked");
-      $("#all").load("about-presentation.html");
+      $("body").load("about-presentation.html");
     });
 
     function scrollFunction() {

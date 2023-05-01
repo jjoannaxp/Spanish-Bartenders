@@ -1,22 +1,26 @@
 $(document).ready(function() {
+
+     $(".circle").hide();
+     $("#arrowteam").hide();
     $("#tutorialbutton").click(function() {
-      $("#audio-14").trigger("play");
-      $("#arrow1").delay(7000);
-      $("#arrow1").animate({top: "60px"}, 500);
+      
+      $("#audio-11").trigger("play");
+        
+      
       setTimeout(function() {
-        $("#audio-2").trigger("play");
-      }, 7500);
+        $(".circle").fadeIn().animate({"top":"1000px"},5000)
+        $("#audio-12").trigger("play");
+      }, 11000); 
+
       setTimeout(function() {
-        $("#circle").css("display", "block");
-    }, 33000);
-    setTimeout(function() {
-      $("#audio-3").trigger("play");
-    }, 30000);
-    setTimeout(function() {
-      $("#aboutaudio").trigger("play");
-    }, 38000);
-    setTimeout(function() {
-      $("#arrow2").animate({top: "60px"}, 500);
-    }, 38000);
-    });
+        $(".circle").fadeIn().animate({"top":"1700px"},1000)
+      }, 25000); 
+
+      setTimeout(function() {
+        $("#audio-13").trigger("play");
+        $("#arrowteam").fadeIn();
+      }, 27000); 
+
+    })
+
   });

@@ -27,3 +27,44 @@
 .audio{
     display:none;
 }
+
+.circle{
+    position: absolute;
+    opacity: 1;
+}
+
+#learncircle{
+    width: 300px;
+    top: 0px;
+}
+
+#arrowlearn{
+    position: fixed;
+    top: 110px;
+    left: 520px;
+}
+
+#arrowteam{
+    position: fixed;
+    top: 110px;
+    left: 600px;
+}
+
+#arrowdownload{
+    position: fixed;
+    top: 110px;
+    left: 1200px;
+}
+
+#teamcircle{
+    top: -110px;
+    left: 300px;
+    width: 800px;
+}
+
+
+#howtocircle{
+    top: -300px;
+    left: 1300px;
+    width: 200px;
+}
