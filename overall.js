@@ -2,8 +2,20 @@ $(document).ready(function () {
   const theme = $('.theme');
   const indiv = $('.individualtheme');
   const modeButton = $("#modebutton");
+
+  console.log(localStorage.getItem("mode"));
+  if(!localStorage.getItem("mode")){
+    localStorage.setItem("mode", "light");
+  }
+ 
   let currentMode = localStorage.getItem("mode");
-  console.log(currentMode + " = curent")
+  if(localStorage.getItem("mode") == "light"){
+    localStorage.setItem("mode", "dark");
+  }else {
+   
+    localStorage.setItem("mode", "light");
+  
+  }
   setStyles(currentMode);
 
   $("#dark").click(function(){
@@ -17,10 +29,11 @@ $(document).ready(function () {
   function setStyles(mode) {
      currentMode = localStorage.getItem("mode");
     
-   
-    if ((mode == "dark" && currentMode == "light" ||mode == "dark" )) {
+   console.log(mode + ", " + currentMode)
+    if ((mode == "dark" && currentMode != "dark")) {
       theme.attr('href', 'overall-darkmode.css');
       indiv.each(function() {
+        console.log("in");
         const href = $(this).attr('href').replace('.css', '-dark.css');
         $(this).attr('href', href);
       });
@@ -33,7 +46,7 @@ $(document).ready(function () {
         $(this).attr('href', href);
       });
       modeButton.html("Light Mode <img src='assets/chevron-black-down.png' id='dropdown-chevron'>");
-      localStorage.setItem("mode", "light");
+     localStorage.setItem("mode", "light");
     }
     console.log(currentMode);
   }
