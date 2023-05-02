@@ -82,3 +82,17 @@
     padding-left: 250px;
     margin-top: -100px;
 }
+
+#arrowtodownload img{
+    position: absolute;
+    top: 350px;
+    left: 900px;
+    width: 300px;
+
+}
+
+#arrowabout{
+    position: absolute;
+    top: 60px;
+    left: 280px;
+}

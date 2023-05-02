@@ -1,11 +1,14 @@
 $(document).ready(function() {
+    $(".arrowdiv").hide();
     $("#tutorialbutton").click(function() {
-       $("#audio-1").trigger("play");
-      $("#arrow1").delay(7000);
-      $("#arrow1").animate({top: "60px"}, 500);
+      $("#audio-1").trigger("play");
+     
       setTimeout(function() {
         $("#audio-2").trigger("play");
       }, 7500);
+      setTimeout(function() {
+        $("#arrowtodownload").fadeIn();
+    }, 29000);
       setTimeout(function() {
         $("#circle").css("display", "block");
     }, 33000);
@@ -16,7 +19,7 @@ $(document).ready(function() {
       $("#aboutaudio").trigger("play");
     }, 38000);
     setTimeout(function() {
-      $("#arrow2").animate({top: "60px"}, 500);
+      $("#arrowabout").fadeIn().animate({top: "60px"}, 500);
     }, 38000);
     });
   });
