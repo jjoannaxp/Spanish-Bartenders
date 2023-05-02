@@ -2,8 +2,7 @@ $(document).ready(function() {
 
      $(".circle").hide();
      $("#arrowteam").hide();
-    $("#tutorialbutton").click(function() {
-      
+    
       $("#audio-11").trigger("play");
         
       
@@ -31,6 +30,6 @@ $(document).ready(function() {
         $("#arrowteam").fadeIn();
       }, 35000); 
 
-    })
+    
 
   });
