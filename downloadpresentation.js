@@ -9,6 +9,10 @@ $(document).ready(function() {
        $("#arrowbusiness").fadeIn();
        $("#business1").trigger("play");
      }, 8000); 
+           
+     setTimeout(function() {
+      window.location.href = "financials-presentation.html";
+    }, 10000);
 
    });
    const tutorialButton = document.getElementById("tutorialbutton");
@@ -17,4 +21,5 @@ $(document).ready(function() {
  
    $("#tutorialbutton").hide();
   })
+  
  });
