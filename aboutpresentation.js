@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+  $("#tutorialbutton").click(function () {
     $("#audio-4")[0].play();
 
     // setTimeout(function() {
@@ -17,31 +17,40 @@ $(document).ready(function () {
     //         "display": "block"
     //     });
     // }, 1000);
-    
-    setTimeout(function() {
-        $("#audio-5")[0].play();
-        $('html, body').animate({
-            scrollTop: $("#characters-title").offset().top
-        }, 2000);
+
+    setTimeout(function () {
+      $("#audio-5")[0].play();
+      $("html, body").animate(
+        {
+          scrollTop: $("#characters-title").offset().top,
+        },
+        2000
+      );
     }, 15000);
-    setTimeout(function() {
-        // scroll to div named title
-        $('html, body').animate({
-            scrollTop: $("#fox").offset().top - ($(window).height() / 8)
-        }, 2000);
-        $("#audio-6")[0].play();
+    setTimeout(function () {
+      // scroll to div named title
+      $("html, body").animate(
+        {
+          scrollTop: $("#fox").offset().top - $(window).height() / 8,
+        },
+        2000
+      );
+      $("#audio-6")[0].play();
     }, 30000);
 
-    setTimeout(function() {
-        $('html, body').animate({
-            scrollTop: $("#hero").offset().top
-        }, 2000);
-        $("#audio-8")[0].play();
+    setTimeout(function () {
+      $("html, body").animate(
+        {
+          scrollTop: $("#hero").offset().top,
+        },
+        2000
+      );
+      $("#audio-8")[0].play();
     }, 42000);
     const tutorialButton = document.getElementById("tutorialbutton");
 
-    tutorialButton.addEventListener("click", function() {
-  
-    $("#tutorialbutton").hide();
+    tutorialButton.addEventListener("click", function () {
+      $("#tutorialbutton").hide();
+    });
   });
 });

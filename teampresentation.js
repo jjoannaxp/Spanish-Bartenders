@@ -1,18 +1,19 @@
 $(document).ready(function () {
   $("#arrowdownload").hide();
-  
 
-  
+  $("#tutorialbutton").click(function () {
     $("#audio-14")[0].play();
-    setTimeout(function(){
-      $('html, body').animate({
-        scrollTop: $('#dani').offset().top - ($(window).height() / 8)
-    }, 2000);
-    }, 5000)
-   
+    setTimeout(function () {
+      $("html, body").animate(
+        {
+          scrollTop: $("#dani").offset().top - $(window).height() / 8,
+        },
+        2000
+      );
+    }, 5000);
+
     setTimeout(function () {
       $("#audio-15")[0].play();
-     
     }, 9000);
 
     setTimeout(function () {
@@ -40,10 +41,13 @@ $(document).ready(function () {
     setTimeout(function () {
       $("#yeji").css("border", "none");
     }, 19000);
-    setTimeout(function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 2000);
+    setTimeout(function () {
+      $("html, body").animate(
+        {
+          scrollTop: 0,
+        },
+        2000
+      );
     }, 20000);
 
     setTimeout(function () {
@@ -52,8 +56,8 @@ $(document).ready(function () {
     }, 19000);
     const tutorialButton = document.getElementById("tutorialbutton");
 
-  tutorialButton.addEventListener("click", function() {
-
-  $("#tutorialbutton").hide();
-});
+    tutorialButton.addEventListener("click", function () {
+      $("#tutorialbutton").hide();
+    });
+  });
 });
