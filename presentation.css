@@ -27,9 +27,66 @@
     border-radius: 50%;
     border: black 2px solid;
     position:fixed;
-    bottom: 10;
-    left: 10;
+    bottom: 50;
+    left: 45%;
     z-index: 9999;
+}
+
+#restart {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 70px;
+    width:70px;
+    position:fixed;
+    bottom: 1.5%;
+    left: 6%;
+    z-index: 9999;
+    background-color: white;
+    border-radius: 50%;
+  }
+  #restart:hover { 
+    background-color:#FFE491;
+    
+}
+
+#full{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 30%;
+    position:fixed;
+    bottom: 6px;
+    left: 43%;
+    z-index: 9999;
+    font-weight: bold;
+    font-size: 15px;
+}
+#exitbutton{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 50px;
+    width:50px;
+    padding: 10px;
+    background-color: #ab2f2f;
+    color: rgb(0, 0, 0);
+    border-radius: 30%;
+    position:fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 9999;
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: -10%;
+}
+#exitbutton:hover { 
+    background-color:rgb(255, 255, 255); 
+    color: #ab2f2f;
+    font-weight: bold;
+    
 }
 #tutorialbutton:hover { 
     background-color:black; 
