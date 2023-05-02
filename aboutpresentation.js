@@ -36,7 +36,7 @@ $(document).ready(function () {
         2000
       );
       $("#audio-6")[0].play();
-    }, 30000);
+    }, 33000);
 
     setTimeout(function () {
       $("html, body").animate(
@@ -46,13 +46,13 @@ $(document).ready(function () {
         2000
       );
       $("#audio-8")[0].play();
-    }, 46000);
+    }, 48000);
     const tutorialButton = document.getElementById("tutorialbutton");
 
     tutorialButton.addEventListener("click", function () {
       $("#tutorialbutton").hide();
-
     });
+
     $("#tutorialbutton").hide();
     setTimeout(function() {
       window.location.href = "howtoplay-presentation.html";
