@@ -19,4 +19,8 @@ $(document).ready(function() {
      $("#tutorialbutton").hide();
      
 
+  tutorialButton.addEventListener("click", function() {
+
+  $("#tutorialbutton").hide();
+});
  });

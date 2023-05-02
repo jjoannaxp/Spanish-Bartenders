@@ -30,7 +30,9 @@ $(document).ready(function () {
       );
       $("#arrowteam").fadeIn();
     }, 35000);
-    const tutorialButton = document.getElementById("tutorialbutton");
+   
+  });
+  const tutorialButton = document.getElementById("tutorialbutton");
 
     tutorialButton.addEventListener("click", function () {
       $("#tutorialbutton").hide();
@@ -41,4 +43,3 @@ $(document).ready(function () {
       }, 38000);
     });
         });
-      });

@@ -59,8 +59,7 @@ $(document).ready(function () {
     }, 28000);
     const tutorialButton = document.getElementById("tutorialbutton");
 
-    tutorialButton.addEventListener("click", function () {
-      $("#tutorialbutton").hide();
-    });
+  tutorialButton.addEventListener("click", function () {
+    $("#tutorialbutton").hide();
   });
 });

@@ -93,11 +93,12 @@ $(document).ready(function () {
       window.location.href = "learn-presentation.html";
     }, 30000);
   });
-  const tutorialButton = document.getElementById("tutorialbutton");
+  
+});
+const tutorialButton = document.getElementById("tutorialbutton");
 
   tutorialButton.addEventListener("click", function() {
 
   $("#tutorialbutton").hide();
-});
 });
 
