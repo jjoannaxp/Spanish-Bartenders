@@ -54,6 +54,9 @@ $(document).ready(function () {
       $("#audio-16")[0].play();
       $("#arrowdownload").fadeIn();
     }, 19000);
+    setTimeout(function() {
+      window.location.href = "download-presentation.html";
+    }, 28000);
     const tutorialButton = document.getElementById("tutorialbutton");
 
     tutorialButton.addEventListener("click", function () {

@@ -88,7 +88,10 @@ $(document).ready(function () {
         2000
       );
     }, 23000);
-  
+    $("#tutorialbutton").hide();
+    setTimeout(function() {
+      window.location.href = "learn-presentation.html";
+    }, 30000);
   });
   const tutorialButton = document.getElementById("tutorialbutton");
 
