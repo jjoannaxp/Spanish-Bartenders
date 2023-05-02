@@ -22,8 +22,8 @@
   #circle{
     position:absolute;
     top: -10px;
-    left: 95vw;
-      width:120px;
+    left: 90vw;
+      width:150px;
       z-index: 99;
       display:none;
   }
