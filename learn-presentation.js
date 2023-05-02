@@ -28,7 +28,12 @@ $(document).ready(function() {
           }, 2000)
         $("#arrowteam").fadeIn();
       }, 35000); 
+      const tutorialButton = document.getElementById("tutorialbutton");
 
+      tutorialButton.addEventListener("click", function() {
+    
+      $("#tutorialbutton").hide();
+    });
     
 
   });

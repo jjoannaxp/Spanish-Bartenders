@@ -38,5 +38,10 @@ $(document).ready(function () {
         }, 2000);
         $("#audio-8")[0].play();
     }, 42000);
-       
+    const tutorialButton = document.getElementById("tutorialbutton");
+
+    tutorialButton.addEventListener("click", function() {
+  
+    $("#tutorialbutton").hide();
+  });
 });

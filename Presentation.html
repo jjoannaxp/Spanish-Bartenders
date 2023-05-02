@@ -147,7 +147,6 @@
     window.onscroll = function () {
       scrollFunction();
     };
-    // if about page clicked, load about page html without refreshing with ajax
     $("#about-page").click(function () {
       console.log("about clicked");
       $("body").load("about-presentation.html");
@@ -174,15 +173,7 @@
         $("li > a").css("color", "#F0E5D3");
       }
     }
-    const tutorialButton = document.getElementById("tutorialbutton");
 
-    tutorialButton.addEventListener("click", function() {
- 
-    tutorialButton.style.animation = "none";
-  
-    tutorialButton.style.backgroundColor = "black";
-    tutorialButton.style.color = "#FFE491";
-});
 
   </script>
 </html>
