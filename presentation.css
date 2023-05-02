@@ -136,6 +136,13 @@
     left: -190px;
 }
 
+#howtoplayarrow{
+    position: relative;
+    height: 60px;
+    top: -20px;
+    left: -300px;
+}
+
 #arrowdownload{
     position: relative;
     width: 50px;
