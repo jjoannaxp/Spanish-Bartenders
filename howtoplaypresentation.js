@@ -1,4 +1,15 @@
 $(document).ready(function () {
+  const tutorialButton = document.getElementById("tutorialbutton");
+
+  window.onload = function() {
+    tutorialButton.style.transform = "scale(1.1)";
+    tutorialButton.classList.add("wiggle");
+    setTimeout(function() {
+      tutorialButton.style.transform = "scale(1)";
+      tutorialButton.style.position = "static";
+      tutorialButton.classList.remove("wiggle");
+    }, 5000);
+  };
   $(".circle").hide();
   $("#arrowlearn").hide();
   $("#tutorialbutton").click(function () {
