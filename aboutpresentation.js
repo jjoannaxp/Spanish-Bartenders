@@ -36,7 +36,7 @@ $(document).ready(function () {
         2000
       );
       $("#audio-6")[0].play();
-    }, 23000);
+    }, 33000);
 
     setTimeout(function () {
       $("html, body").animate(
@@ -46,7 +46,7 @@ $(document).ready(function () {
         2000
       );
       $("#audio-8")[0].play();
-    }, 22000);
+    }, 48000);
     
   });
   const tutorialButton = document.getElementById("tutorialbutton");
