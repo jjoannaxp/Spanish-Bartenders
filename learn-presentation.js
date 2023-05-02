@@ -17,6 +17,10 @@ $(document).ready(function() {
       }, 25000); 
 
       setTimeout(function() {
+        $("#quiz-audio").trigger("play");
+      }, 25000); 
+
+      setTimeout(function() {
         $("#audio-13").trigger("play");
         $("#arrowteam").fadeIn();
       }, 27000); 
