@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $("#tutorialbutton").click(function () {
+
     $("#arrowbusiness").hide();
    
      
@@ -13,5 +15,5 @@ $(document).ready(function() {
    
      $("#tutorialbutton").hide();
    });
-  
+  })
  });
