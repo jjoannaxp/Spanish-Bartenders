@@ -27,10 +27,10 @@
   /* light red */ 
 
   font-weight: bold;
-  z-index: 9999;
+  z-index: 30;
   position: relative;
   left: 0%;
-  top:40%;
+  top:90%;
 }
 
   .tutorial-arrow{
