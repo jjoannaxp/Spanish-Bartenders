@@ -58,6 +58,6 @@ $("#howtoplayarrow").hide();
     $("#tutorialbutton").hide();
     setTimeout(function() {
       window.location.href = "howtoplay-presentation.html";
-    }, 51000);
+    }, 53000);
   });
 });
