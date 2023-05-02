@@ -23,7 +23,109 @@
     left: 5;
 }
 
+#aboutarrow{
+    position:relative;
+    height: 50px;
+    top: 80px;
+    left: -570px;
+}
+
+#modesarrow{
+    position:relative;
+    height:50px;
+    top:80px;
+    left: 1200;
+}
+
 
 .audio{
     display:none;
+}
+
+.circle{
+    position: absolute;
+    opacity: 1;
+}
+
+#learncircle{
+    width: 300px;
+    top: 0px;
+}
+
+#arrowlearn{
+    position: fixed;
+   
+    top: 110px;
+    left: 520px;
+}
+
+#arrowteam{
+    position: fixed;
+    top: 110px;
+    left: 600px;
+}
+
+#arrowdownload{
+    position: relative;
+    width: 40px;
+    height:auto;
+    z-index: 99999;
+    top: 70%;
+    left:32%;
+    
+}
+
+@media screen and (max-width: 1024px){
+    #arrowdownload{
+        left: -20%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #arrowdownload{
+        left: 95%;
+        top: 60%;
+        width: 20px;
+    }
+}
+
+#teamcircle{
+    top: -110px;
+    left: 300px;
+    width: 800px;
+}
+
+
+#howtocircle{
+    top: -300px;
+    left: 1300px;
+    width: 200px;
+}
+
+#arrowbusiness .tutorial-arrow{
+    position: absolute;
+    top: 160px;
+    left: 900px;
+    width: 200px;
+}
+
+#financialscircle{
+    width: 300px;
+    height: 500px;
+    padding-left: 250px;
+    margin-top: -100px;
+}
+
+#arrowtodownload {
+    position: relative;
+    height:auto;
+    left: 20%;
+    top: -8%;
+    width: 50px;
+}
+
+#arrowabout{
+    position: absolute;
+    top: 60px;
+    left: 280px;
 }

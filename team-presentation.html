@@ -9,6 +9,7 @@
 
     <link href="presentation.css" type="text/css" rel="stylesheet">
     <script src="presentation.js"></script>  
+    <script src="teampresentation.js"></script>  
 </head>
     <script src="http://iyawebdev.com/jquery.js"></script>
     <script src="galleryplugin/src/jquery-tjgallery.js"></script>
@@ -41,6 +42,7 @@
             <li><a href="team-presentation.html">Team</a></li>
           </ul>
           <div id="sidebuttons">
+            <img src="uparrow.png" class="vertical" id = "arrowdownload">
             <a href="download-presentation.html"><div id="Download">Download</div></a>
             <div id="modes">
               <div id="modebutton">
@@ -60,9 +62,9 @@
       <div id="tutorialbutton">
         TUTORIAL
       </div>
-      
-      <div class="content">
 
+      <div class="content">
+          
         <div class = "photosection">
 
         </div>
@@ -83,32 +85,32 @@
 
     <div class="pictures">
         <div class="item">
-            <img src="headshots/dani.png" alt=""/> 
+            <img src="headshots/dani.png" alt="" id="dani" /> 
             <div class="item_description"><span>Dani<em><br/>Financials/Operations<br/></em></span></div>
             
         </div>
         <div class="item">
-            <img src="headshots/joey.png" alt="" /> 
+            <img src="headshots/joey.png" alt=""  id="joey"/> 
             <div class="item_description"><span>Joey<em><br/>Developments<br/></em></span></div>
            
         </div>
-        <div class="item">
-            <img src="headshots/shailee.jpeg" alt="" /> 
+        <div class="item" class="financials">
+            <img src="headshots/shailee.jpeg" alt="" id="shailee"/> 
             <div class="item_description"><span>Shailee<em><br/>Financials/Operations<br/></em></span></div>
             
         </div>
         <div class="item">
-            <img src="headshots/zac.png" alt="" />
+            <img src="headshots/zac.png" id="zac" alt="" />
             <div class="item_description"><span>Zac<em><br/>3D Art<br/></em></span></div>
             
         </div>
         <div class="item">
-            <img src="headshots/louis.jpeg" alt="" /> 
+            <img src="headshots/louis.jpeg" alt="" id="louis" /> 
             <div class="item_description"><span>Louis<em><br/>3D Art<br/></em></span></div>
            
         </div>
         <div class="item">
-            <img src="headshots/yeji.png" alt="" /> 
+            <img src="headshots/yeji.png" alt="" id="yeji"/> 
             <div class="item_description"><span>Yeji<em><br/>Design<br/></em></span></div>
         </div>
         
@@ -117,7 +119,15 @@
         
     </div>
 
-    
+    <audio id="audio-14" class="audio">
+      <source src="audios/audio14.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio-15" class="audio">
+      <source src="audios/audio15.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio-16" class="audio">
+      <source src="audios/audio16.mp3" type="audio/mp3">
+    </audio>
 </div>
 <div id="footer">
 <svg width="1512" height="427" viewBox="0 0 1512 427" fill="none" xmlns="http://www.w3.org/2000/svg" id="footer-background">
@@ -132,10 +142,10 @@
 
     <img src="assets/logo.png" id="footer-logo" />
     <div id="links">
-        <a href="about.html">About</a>
-        <a href="howtoplay.html">How To Play</a>
-        <a href="team.html">Team</a>
-        <a href="financials.html">Business</a>
+      <a href="about-presentation.html">About</a>
+      <a href="howtoplay-presentation.html">How To Play</a>
+      <a href="team-presentation.html">Team</a>
+      <a href="financials-presentation.html">Business</a>
     </div>
     <a href="download.html">
         <div id="download-footer">Download</div>

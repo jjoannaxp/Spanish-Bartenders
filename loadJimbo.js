@@ -54,6 +54,9 @@ function loadJimbo(containerId, fbxName, animationIndex, sliderId, initialPose, 
       currentObject = object;
       currentMixer = mixer;
       currentAction = action;
+      renderer.setSize(container.clientWidth, container.clientHeight);
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
       renderer.render(scene, camera); // render a silhouette of the model
     });
   }

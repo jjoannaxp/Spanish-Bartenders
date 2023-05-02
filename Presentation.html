@@ -2,7 +2,9 @@
   <head>
     <title>Home</title>
     <link class="theme" href="overall.css" type="text/css" rel="stylesheet" />
-   
+    <script src="https://cdn.jsdelivr.net/npm/three@0.138.3/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.138.3/examples/js/loaders/FBXLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fflate@0.7.4/umd/index.min.js"></script>
     <link class="individualtheme" href="home.css" type="text/css" rel="stylesheet"/>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="overall.js"></script>
@@ -19,11 +21,13 @@
             <img src="assets/logo.png" id="header-logo" />
           </a>
           <li><a href="Presentation.html">Home</a></li>
-          <li><a href="#" id="about-page">About</a></li>
-          <li><a href="howtoplay-presentation.html">How To Play</a></li>
-          <li><a href="learn-presentation.html">Learn</a></li>
-          <li><a href="team-presentation.html">Team</a></li>
+            <li><a href="about-presentation.html">About</a></li>
+            
+            <li><a href="howtoplay-presentation.html">How To Play</a></li>
+            <li><a href="learn-presentation.html">Learn</a></li>
+            <li><a href="team-presentation.html">Team</a></li>
         </ul>
+        <img src="uparrow.png" class="vertical" id="aboutarrow">
         <div id="sidebuttons">
           <a href="download-presentation.html"><div id="Download">Download</div></a>
           <div id="modes">
@@ -36,8 +40,11 @@
               <div id="dark" class="drops">Dark Mode</div>
             </div>
           </div>
+          
         </div>
+        
       </div>
+      <img src="uparrow.png" class="vertical" id="modesarrow">
     </div>
 
     <div id="tutorialbutton">
@@ -49,29 +56,7 @@
       <div id="hero-background">
         
       <div id="hero">
-        
-        <div  id="arrow1"class="arrowdiv">
-          <img src="uparrow.png" class="tutorial-arrow">
-        </div>
     
-        <div id="arrow2" class="arrowdiv">
-            <img src="uparrow.png" class="tutorial-arrow">
-        </div>
-    
-        <div id="arrow3" class="arrowdiv">
-            <img src="uparrow.png" class="tutorial-arrow">
-        </div>
-    
-        <div id="arrow4" class="arrowdiv" >
-            <img src="uparrow.png" class="tutorial-arrow">
-        </div>
-    
-        <div id="arrow5" class="arrowdiv">
-            <img src="uparrow.png" class="tutorial-arrow">
-        </div> 
-    
-       
-            <img src="circlegif.gif" id="circle">
     
         
         <img src="assets/please.gif" style="width: 300px">
@@ -79,6 +64,7 @@
         <a href="download.html"
           ><div id="downloadforfree" class="button">DOWNLOAD FOR FREE</div></a
         >
+        <img src="left-arrow.png" class="horizontal" id="arrowtodownload">
       </div>
     </div>
       <div id="aboutus">
@@ -135,9 +121,10 @@
       <div id="footer-content">
         <img src="assets/logo.png" id="footer-logo" />
         <div id="links">
-          <a href="about.html">About</a>
-          <a href="howtoplay.html">How To Play</a>
-          <a href="team.html">Team</a>
+          <a href="about-presentation.html">About</a>
+          <a href="howtoplay-presentation.html">How To Play</a>
+          <a href="team-presentation.html">Team</a>
+          <a href="financials-presentation.html">Business</a>
         </div>
         <a href="download.html"><div id="download-footer">Download</div></a>
         <div id="copyright">
@@ -156,7 +143,7 @@
     // if about page clicked, load about page html without refreshing with ajax
     $("#about-page").click(function () {
       console.log("about clicked");
-      $("#all").load("about-presentation.html");
+      $("body").load("about-presentation.html");
     });
 
     function scrollFunction() {

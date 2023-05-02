@@ -12,7 +12,7 @@
     <script src="overall.js"></script>
 
     <link href="presentation.css" type="text/css" rel="stylesheet">
-    <script src="presentation.js"></script>
+    <script src="howtoplaypresentation.js"></script>
   </head>
   <body>
     <div id="header">
@@ -42,24 +42,26 @@
         </div>
       </div>
     </div>
-    <div id="tutorialbutton">
-      TUTORIAL
-    </div>
+    
     <div class="topbar">
       <div class="title" id="maintitle">How To Play</div>
     </div>
 
     <div class = "play">
+        <div  id="arrowlearn"class="arrowdiv">
+        <img src="uparrow.png" class="tutorial-arrow"> </div>
+        
+
         <div class = "playbox">
             <img class = "playimg"
             src = "assets/blue-eagle.png"
             > <br/><br/>
-            <div class = "play-background">
+            <div class = "play-background" id="play1">
             Make conersations with Professor Aguila to get prepared with running the bar!<br><br>
             By advancing to new levels, you will earn more money to decorate your bar and unlock more drink recipies for your customers! In addition, more success talking to the customers means more money for the bar!
         </div></div>
         <div class = "playbox">
-            <div class = "play-background">
+            <div class = "play-background" id="play2">
             When you successfully finish a transaction with a customer, you will earn money and more experience points and level up your Spanish skills.<br><br>
             When you don't know how to respond to a customer's request, you will loose money as they might not purchase your drinks. So, make sure you use Professor Aguila's help when you need a hint!
             <br/><br/></div>
@@ -71,16 +73,26 @@
             <img class = "playimg"
             src = "assets/gamescene.png"
             > <br/><br/>
-            <div class = "play-background">
+            <div class = "play-background" id="play3">
                 Use left right up down arrows on your keyboard to move the character in and out of different convesations. <br/><br>
             You can feel free to join any conversation with the character when they have a box around them, and you must talk to the customers that needs your help, which are marked with an explanation mark.
                 </div>
             </div>
     </div>
+    <img src="animationaudio/arrow.gif" class="circle" id="howtocircle">
     <div class="goal">
       Remember, Your goal is to learn Spanish, so no peeking and cheating with
       google when you forget the words! Nobody gets it right the first time,
       that's why we are here to learn and play!
+    </div>
+    <audio id="audio-9" class="audio">
+      <source src="audios/audio9.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio-10" class="audio">
+      <source src="audios/audio10.mp3" type="audio/mp3">
+    </audio>
+    <div id="tutorialbutton">
+      TUTORIAL
     </div>
     <div id="footer">
       <div id="footer">
@@ -95,10 +107,10 @@
       <div id="footer-content">
         <img src="assets/logo.png" id="footer-logo" />
         <div id="links">
-          <a href="about.html">About</a>
-          <a href="howtoplay.html">How To Play</a>
-          <a href="team.html">Team</a>
-          <a href="financials.html">Business</a>
+          <a href="about-presentation.html">About</a>
+          <a href="howtoplay-presentation.html">How To Play</a>
+          <a href="team-presentation.html">Team</a>
+          <a href="financials-presentation.html">Business</a>
         </div>
         <a href="download.html"><div id="download-footer">Download</div></a>
         <div id="copyright">
