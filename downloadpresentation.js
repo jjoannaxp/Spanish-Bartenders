@@ -12,7 +12,7 @@ $(document).ready(function() {
            
      setTimeout(function() {
       window.location.href = "financials-presentation.html";
-    }, 10000);
+    }, 12000);
 
    });
    const tutorialButton = document.getElementById("tutorialbutton");

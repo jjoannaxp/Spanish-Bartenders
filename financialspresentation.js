@@ -7,16 +7,9 @@ $(document).ready(function () {
     $(".circle").fadeIn().animate({ "margin-left": "730px" }, 300);
   }, 6200);
 });
-setTimeout(function () {
-  window.location.href = "financials-presentation.html";
-}, 6500);
-
 const tutorialButton = document.getElementById("tutorialbutton");
 
-tutorialButton.addEventListener("click", function () {
-  $("#tutorialbutton").hide();
+tutorialButton.addEventListener("click", function() {
 
-  tutorialButton.addEventListener("click", function () {
-    $("#tutorialbutton").hide();
-  });
-});
+$("#tutorialbutton").hide();
+})
