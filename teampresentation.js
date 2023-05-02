@@ -2,7 +2,7 @@ $(document).ready(function () {
   // $("#arrowdownload").hide();
   
 
-  $("#tutorialbutton").click(function () {
+  
     $("#audio-14")[0].play();
     setTimeout(function(){
       $('html, body').animate({
@@ -24,7 +24,7 @@ $(document).ready(function () {
       $("#dani").css("border", "none");
       $("#shailee").css("border", "none");
       $("#joey").css("border", "10px white solid");
-    }, 13000);
+    }, 14000);
 
     setTimeout(function () {
       $("#joey").css("border", "none");
@@ -50,5 +50,5 @@ $(document).ready(function () {
       $("#audio-16")[0].play();
       $("#arrowdownload").fadeIn();
     }, 19000);
-  });
+  
 });

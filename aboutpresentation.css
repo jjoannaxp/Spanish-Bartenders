@@ -1,22 +1,29 @@
 #arrow6{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* display:none; */
-    /* rotate 180 */
-    transform: rotate(180deg);
+  position: relative;
+  left: 40%;
+  top:40%;
+  display:block;
   }
   
   #arrow7{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* display:none; */
+    position: relative;
+    /* move inside flexbox */
+    left: 40%;
+    top:40%;
+    display:block;
     /* rotate 180 */
-    transform: rotate(180deg);
   }
+
+.clickme{
+  /* bold */
+  /* light red */ 
+
+  font-weight: bold;
+  z-index: 9999;
+  position: relative;
+  left: 0%;
+  top:40%;
+}
 
   .tutorial-arrow{
     width: 40px;
