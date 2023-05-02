@@ -34,7 +34,12 @@ $(document).ready(function () {
   });
   const tutorialButton = document.getElementById("tutorialbutton");
 
-  tutorialButton.addEventListener("click", function () {
-    $("#tutorialbutton").hide();
-  });
-});
+    tutorialButton.addEventListener("click", function () {
+      $("#tutorialbutton").hide();
+
+      
+      setTimeout(function() {
+        window.location.href = "team-presentation.html";
+      }, 38000);
+    });
+        });

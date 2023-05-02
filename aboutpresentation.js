@@ -36,7 +36,7 @@ $(document).ready(function () {
         2000
       );
       $("#audio-6")[0].play();
-    }, 33000);
+    }, 30000);
 
     setTimeout(function () {
       $("html, body").animate(
@@ -46,12 +46,16 @@ $(document).ready(function () {
         2000
       );
       $("#audio-8")[0].play();
-    }, 48000);
-    
-  });
-  const tutorialButton = document.getElementById("tutorialbutton");
+    }, 46000);
+    const tutorialButton = document.getElementById("tutorialbutton");
 
     tutorialButton.addEventListener("click", function () {
       $("#tutorialbutton").hide();
+
     });
+    $("#tutorialbutton").hide();
+    setTimeout(function() {
+      window.location.href = "howtoplay-presentation.html";
+    }, 48000);
+  });
 });
