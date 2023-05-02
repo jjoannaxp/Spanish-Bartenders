@@ -36,7 +36,7 @@ $(document).ready(function () {
         2000
       );
       $("#audio-6")[0].play();
-    }, 30000);
+    }, 23000);
 
     setTimeout(function () {
       $("html, body").animate(
@@ -46,11 +46,12 @@ $(document).ready(function () {
         2000
       );
       $("#audio-8")[0].play();
-    }, 42000);
-    const tutorialButton = document.getElementById("tutorialbutton");
+    }, 22000);
+    
+  });
+  const tutorialButton = document.getElementById("tutorialbutton");
 
     tutorialButton.addEventListener("click", function () {
       $("#tutorialbutton").hide();
     });
-  });
 });

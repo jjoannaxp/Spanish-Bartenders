@@ -54,10 +54,11 @@ $(document).ready(function () {
       $("#audio-16")[0].play();
       $("#arrowdownload").fadeIn();
     }, 19000);
-    const tutorialButton = document.getElementById("tutorialbutton");
+   
+  });
+  const tutorialButton = document.getElementById("tutorialbutton");
 
-    tutorialButton.addEventListener("click", function () {
-      $("#tutorialbutton").hide();
-    });
+  tutorialButton.addEventListener("click", function () {
+    $("#tutorialbutton").hide();
   });
 });
