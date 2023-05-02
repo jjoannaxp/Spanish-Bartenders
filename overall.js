@@ -61,6 +61,6 @@ $(document).ready(function () {
       console.log("lll");
       $(this).css("color",green);
     }
-      
+
   })
 });

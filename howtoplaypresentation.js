@@ -88,16 +88,13 @@ $(document).ready(function () {
         2000
       );
     }, 23000);
+  
   });
-});
+  const tutorialButton = document.getElementById("tutorialbutton");
 
-window.onload = function() {
-  setTimeout(function() {
-    var tutorialButton = document.getElementById("tutorialbutton");
-    tutorialButton.style.animation = "blink 1s linear infinite";
-    setTimeout(function() {
-      tutorialButton.style.animation = "";
-    }, 5000);
-  }, 1000);
-};
+  tutorialButton.addEventListener("click", function() {
+
+  $("#tutorialbutton").hide();
+});
+});
 
