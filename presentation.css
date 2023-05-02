@@ -1,4 +1,13 @@
 
+@keyframes blink {
+  0% { background-color: #FFE491; }
+  50% { background-color: black; color: #FFE491; }
+  100% { background-color: #FFE491; }
+}
+#tutorialbutton {
+  animation: blink 2s linear infinite;
+}
+
 .arrowdiv{
     top:100vh;
 }
