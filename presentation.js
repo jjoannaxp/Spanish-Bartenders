@@ -1,11 +1,25 @@
 $(document).ready(function() {
-    $(".arrowdiv").hide();
+  $("#aboutarrow").hide();
+  $("#arrowtodownload").hide();
     $("#tutorialbutton").click(function() {
       $("#audio-1").trigger("play");
-     
+      
       setTimeout(function() {
         $("#audio-2").trigger("play");
+        $('html, body').animate({
+          scrollTop: $(document).height()
+        }, 10000)
       }, 7500);
+      setTimeout(function(){
+        $('html, body').animate({
+          scrollTop: $(document).height()
+        }, 10000)
+      }, 10000)
+      setTimeout(function(){
+        $('html, body').animate({
+          scrollTop: 0
+        }, 2000)
+      }, 27000)
       setTimeout(function() {
         $("#arrowtodownload").fadeIn();
     }, 29000);

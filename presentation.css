@@ -23,6 +23,20 @@
     left: 5;
 }
 
+#aboutarrow{
+    position:relative;
+    height: 50px;
+    top: 80px;
+    left: -570px;
+}
+
+#modesarrow{
+    position:relative;
+    height:50px;
+    top:80px;
+    left: 1200;
+}
+
 
 .audio{
     display:none;
@@ -40,6 +54,7 @@
 
 #arrowlearn{
     position: fixed;
+   
     top: 110px;
     left: 520px;
 }
@@ -51,9 +66,27 @@
 }
 
 #arrowdownload{
-    position: fixed;
-    top: 110px;
-    left: 1130px;
+    position: relative;
+    width: 40px;
+    height:auto;
+    z-index: 99999;
+    top: 70%;
+    left:32%;
+    
+}
+
+@media screen and (max-width: 1024px){
+    #arrowdownload{
+        left: -20%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #arrowdownload{
+        left: 95%;
+        top: 60%;
+        width: 20px;
+    }
 }
 
 #teamcircle{
@@ -83,12 +116,12 @@
     margin-top: -100px;
 }
 
-#arrowtodownload img{
-    position: absolute;
-    top: 350px;
-    left: 900px;
-    width: 300px;
-
+#arrowtodownload {
+    position: relative;
+    height:auto;
+    left: 20%;
+    top: -8%;
+    width: 50px;
 }
 
 #arrowabout{
