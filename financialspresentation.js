@@ -1,7 +1,8 @@
 $(document).ready(function() {
   $(".circle").hide();
    
-     
+  $("#tutorialbutton").click(function () {
+
      $("#business2").trigger("play");
 
      setTimeout(function() {
@@ -13,6 +14,6 @@ $(document).ready(function() {
    
      $("#tutorialbutton").hide();
    });
-   
+  })
 
  });
