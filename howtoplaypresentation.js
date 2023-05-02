@@ -47,7 +47,7 @@ $(document).ready(function () {
     $("#tutorialbutton").hide();
     setTimeout(function() {
       window.location.href = "learn-presentation.html";
-    }, 30000);
+    }, 29000);
   });
   
 });
