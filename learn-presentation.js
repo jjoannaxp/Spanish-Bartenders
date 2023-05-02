@@ -40,6 +40,6 @@ $(document).ready(function () {
       
       setTimeout(function() {
         window.location.href = "team-presentation.html";
-      }, 38000);
+      }, 40000);
     });
         });

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+$("#howtoplayarrow").hide();
   $("#tutorialbutton").click(function () {
     $("#audio-4")[0].play();
 
@@ -41,10 +42,11 @@ $(document).ready(function () {
     setTimeout(function () {
       $("html, body").animate(
         {
-          scrollTop: $("#hero").offset().top,
+          scrollTop: 0
         },
         2000
       );
+      $("#howtoplayarrow").show();
       $("#audio-8")[0].play();
     }, 48000);
     const tutorialButton = document.getElementById("tutorialbutton");
@@ -56,6 +58,6 @@ $(document).ready(function () {
     $("#tutorialbutton").hide();
     setTimeout(function() {
       window.location.href = "howtoplay-presentation.html";
-    }, 48000);
+    }, 53000);
   });
 });
