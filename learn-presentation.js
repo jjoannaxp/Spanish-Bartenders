@@ -23,12 +23,12 @@ $(document).ready(function() {
 
       setTimeout(function() {
         $("#quiz-audio").trigger("play");
-      }, 25000); 
+      }, 27000); 
 
       setTimeout(function() {
         $("#audio-13").trigger("play");
         $("#arrowteam").fadeIn();
-      }, 27000); 
+      }, 35000); 
 
     
 
