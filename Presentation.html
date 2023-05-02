@@ -17,18 +17,20 @@
     <div id="header">
       <div id="nav">
         <ul id="menu">
-          <a href="home.html">
+          <a href="Presentation.html">
             <img src="assets/logo.png" id="header-logo" />
           </a>
           <li><a href="Presentation.html">Home</a></li>
-            <li><a id="about-page" href="#">About</a></li>
-            <li><a href="howtoplay-presentation.html">How To Play</a></li>
+          <li><a href="about-presentation.html">About</a></li>
+          <li><a href="howtoplay-presentation.html">How To Play</a></li>
             <li><a href="learn-presentation.html">Learn</a></li>
             <li><a href="team-presentation.html">Team</a></li>
         </ul>
         <img src="uparrow.png" class="vertical" id="aboutarrow">
         <div id="sidebuttons">
+          <img src="uparrow.png" class="vertical" id="modesarrow">
           <a href="download-presentation.html"><div id="Download">Download</div></a>
+          
           <div id="modes">
             <div id="modebutton">
               Light Mode
@@ -43,7 +45,7 @@
         </div>
         
       </div>
-      <img src="uparrow.png" class="vertical" id="modesarrow">
+      
     </div>
 
     <div id="tutorialbutton">
@@ -166,5 +168,15 @@
         $("li > a").css("color", "#F0E5D3");
       }
     }
+    const tutorialButton = document.getElementById("tutorialbutton");
+
+    tutorialButton.addEventListener("click", function() {
+ 
+    tutorialButton.style.animation = "none";
+  
+    tutorialButton.style.backgroundColor = "black";
+    tutorialButton.style.color = "#FFE491";
+});
+
   </script>
 </html>
