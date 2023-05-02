@@ -1,14 +1,19 @@
 $(document).ready(function () {
-  $("#arrowdownload").hide();
-  $("#tutorialbutton").click(function () {
-    $("#audio-14").trigger("play");
-    setTimeout(function () {
-      $("#audio-15").trigger("play");
-      $('html, body').animate({
-        scrollTop: $('.pictures').offset().top -100
-    }, 2000);
-    }, 9000);
+  // $("#arrowdownload").hide();
+  
 
+  $("#tutorialbutton").click(function () {
+    $("#audio-14")[0].play();
+    setTimeout(function(){
+      $('html, body').animate({
+        scrollTop: $('#dani').offset().top - ($(window).height() / 8)
+    }, 2000);
+    }, 5000)
+   
+    setTimeout(function () {
+      $("#audio-15")[0].play();
+     
+    }, 9000);
 
     setTimeout(function () {
       $("#dani").css("border", "10px white solid");
@@ -19,7 +24,7 @@ $(document).ready(function () {
       $("#dani").css("border", "none");
       $("#shailee").css("border", "none");
       $("#joey").css("border", "10px white solid");
-    }, 12000);
+    }, 13000);
 
     setTimeout(function () {
       $("#joey").css("border", "none");
@@ -42,7 +47,7 @@ $(document).ready(function () {
     }, 20000);
 
     setTimeout(function () {
-      $("#audio-16").trigger("play");
+      $("#audio-16")[0].play();
       $("#arrowdownload").fadeIn();
     }, 19000);
   });

@@ -100,13 +100,13 @@ li a:hover{
 }
 
 .horizontal {
-    height: 200px;
+  height:200px;
     position: absolute;
     /* display: none; */
     animation: bounceHorizontal 2s infinite;
   }
 .vertical {
-  height: 200px;
+  height:200px;
   position: absolute;
   /* display: none; */
   animation: bounceVertical 2s infinite;
