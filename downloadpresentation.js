@@ -1,7 +1,6 @@
 $(document).ready(function() {
+  $("#arrowbusiness").hide();
   $("#tutorialbutton").click(function () {
-
-    $("#arrowbusiness").hide();
    
      
      $("#audio-17").trigger("play")
