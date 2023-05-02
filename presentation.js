@@ -38,8 +38,10 @@ $(document).ready(function() {
       $("#modesarrow").hide();
       $("#aboutarrow").show();
     }, 38000);
-    
-    });
+    setTimeout(function() {
+      window.location.href = "about-presentation.html";
+    }, 42000);
+  });
     const tutorialButton = document.getElementById("tutorialbutton");
 
     tutorialButton.addEventListener("click", function() {
