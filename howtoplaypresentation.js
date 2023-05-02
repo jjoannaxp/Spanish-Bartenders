@@ -90,11 +90,12 @@ $(document).ready(function () {
     }, 23000);
   
   });
-  const tutorialButton = document.getElementById("tutorialbutton");
+  
+});
+const tutorialButton = document.getElementById("tutorialbutton");
 
   tutorialButton.addEventListener("click", function() {
 
   $("#tutorialbutton").hide();
-});
 });
 
