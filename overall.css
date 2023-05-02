@@ -94,8 +94,47 @@ li a:hover{
     position:absolute;
     height: 200px;
     margin-left: 10%;
+    display: none;
+    z-index: 99999;
     
 }
+
+.horizontal {
+    height: 200px;
+    position: absolute;
+    /* display: none; */
+    animation: bounceHorizontal 2s infinite;
+  }
+.vertical {
+  height: 200px;
+  position: absolute;
+  /* display: none; */
+  animation: bounceVertical 2s infinite;
+}
+  
+  @keyframes bounceHorizontal {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(0);
+    }
+    40% {
+      transform: translateX(-10px);
+    }
+    60% {
+      transform: translateX(-5px);
+    }
+  }
+
+  @keyframes bounceVertical {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
 
 #sidebuttons{
     height: 100px;
